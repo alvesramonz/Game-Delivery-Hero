@@ -1,0 +1,27 @@
+RASCUNHOS:
+
+[Arquitetura dos níveis]
+*Os últimos níveis possivelmente serão apenas bônus e caso tenha inimigos serão com baixa dificuldade ou alta, a depender da recompensa. Ex.: Níveis 4.2 e 7.2
+
+*História:
+[A DEFINIR]
+
+
+FASE 01: Cenário [ ]
+	FASE 1.1: Cenário [ ]
+FASE 02: Cenário [ ]
+FASE 03: Cenário [ ]
+FASE 04: Cenário [ ]
+	FASE 4.1: Cenário [ ]
+		FASE 4.2: Cenário [ ]
+	FASE 4.3: Cenário [ ]
+FASE 05: Cenário [ ]
+FASE 06 [Boss]: Cenário [ ]
+FASE 07: Cenário [ ]
+	FASE 7.1: Cenário [ ]
+		FASE 7.2 [Boss]: Cenário [ ]
+	FASE 7.3: Cenário [ ]
+FASE 08: Cenário [ ]
+FASE 09 [Boss]: Cenário [ ]
+	FASE 9.1: Cenário [ ]
+FASE 10 [Boss]: Cenário [ ]
