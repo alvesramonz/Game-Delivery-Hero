@@ -8,7 +8,7 @@ go habilidoso antes de morrer conseguiu conjurar uma de suas magias mais fortes 
 único sobrevivente desse desfecho o aventureiro precisa relatar o ocorrido na cidade que solicitou essa missão e a partir daí veremos o que vai acontecer.
 
 Obs 1: Ainda falta muita coisa, mas eu precisava rascunhar a história o quanto antes para ter base para a construção.
-
+Obs2 
 [Arquitetura dos níveis]
 *Os últimos níveis possivelmente serão apenas bônus e caso tenha inimigos serão com baixa dificuldade ou alta, a depender da recompensa. Ex.: Níveis 4.2 e 7.2
 
