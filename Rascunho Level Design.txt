@@ -1,10 +1,16 @@
 RASCUNHOS:
 
+História:
+Este jogo se trata de contar a história de um dito aventureiro que era para para entrar em grandes grupos para servir apenas como mochileiro, sem nenhuma habili
+dade de combate a sua eficiência em lutas se tornava próxima de zero. Comumente seu objetivo era ficar o mais longe possível da linha de trás de combate carrega
+ndo os itens e mochilas dos outros aventureiros, mas a última missão não ocorreu como o esperado. Enfrentando um lorde demônio o grupo foi exterminado, mas o ma
+go habilidoso antes de morrer conseguiu conjurar uma de suas magias mais fortes e selou a tempo o demônio antes que matasse o aventureiro mochileiro. Agora como
+único sobrevivente desse desfecho o aventureiro precisa relatar o ocorrido na cidade que solicitou essa missão e a partir daí veremos o que vai acontecer.
+
+Obs 1: Ainda falta muita coisa, mas eu precisava rascunhar a história o quanto antes para ter base para a construção.
+
 [Arquitetura dos níveis]
 *Os últimos níveis possivelmente serão apenas bônus e caso tenha inimigos serão com baixa dificuldade ou alta, a depender da recompensa. Ex.: Níveis 4.2 e 7.2
-
-*História:
-[A DEFINIR]
 
 
 FASE 01: Cenário [ ]
