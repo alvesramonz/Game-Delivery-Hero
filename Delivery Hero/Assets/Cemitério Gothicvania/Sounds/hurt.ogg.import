@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/hurt.ogg-4209bb06e9d411caf6b6d653e86a385b.oggstr"
+
+[deps]
+
+source_file="res://Assets/Cemitério Gothicvania/Sounds/hurt.ogg"
+dest_files=[ "res://.import/hurt.ogg-4209bb06e9d411caf6b6d653e86a385b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

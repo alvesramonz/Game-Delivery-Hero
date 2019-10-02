@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/jump.ogg-d797ecf2e214083e75050e1369ce325a.oggstr"
+
+[deps]
+
+source_file="res://Assets/Cemitério Gothicvania/Sounds/jump.ogg"
+dest_files=[ "res://.import/jump.ogg-d797ecf2e214083e75050e1369ce325a.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
