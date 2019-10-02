@@ -8,26 +8,33 @@ go habilidoso antes de morrer conseguiu conjurar uma de suas magias mais fortes 
 único sobrevivente desse desfecho o aventureiro precisa relatar o ocorrido na cidade que solicitou essa missão e a partir daí veremos o que vai acontecer.
 
 Obs 1: Ainda falta muita coisa, mas eu precisava rascunhar a história o quanto antes para ter base para a construção.
-Obs2 
+Obs 2:
+ 
 [Arquitetura dos níveis]
 *Os últimos níveis possivelmente serão apenas bônus e caso tenha inimigos serão com baixa dificuldade ou alta, a depender da recompensa. Ex.: Níveis 4.2 e 7.2
 
-
-FASE 01: Cenário [ ]
+----------------------------------------------------------------------
+>FASE 01: Cenário [Floresta A]
 	FASE 1.1: Cenário [ ]
-FASE 02: Cenário [ ]
-FASE 03: Cenário [ ]
-FASE 04: Cenário [ ]
+>FASE 02: Cenário [Floresta A]
+>FASE 03: Cenário [Cidade A]
+>FASE 04: Cenário [Cidade A]
 	FASE 4.1: Cenário [ ]
 		FASE 4.2: Cenário [ ]
 	FASE 4.3: Cenário [ ]
-FASE 05: Cenário [ ]
-FASE 06 [Boss]: Cenário [ ]
-FASE 07: Cenário [ ]
-	FASE 7.1: Cenário [ ]
-		FASE 7.2 [Boss]: Cenário [ ]
-	FASE 7.3: Cenário [ ]
-FASE 08: Cenário [ ]
-FASE 09 [Boss]: Cenário [ ]
+>FASE 05: Cenário [Saída da Floresta B > Começo Caverna A]
+>FASE 06: [Boss]: Cenário [Caverna A]
+>FASE 07: Cenário [Saída da Caverna A > Começo da Floresta B]
+>FASE 08: Cenário [Cidade B]
+	FASE 8.1: Cenário [ ]
+		FASE 8.2 [Boss]: Cenário [ ]
+	FASE 8.3: Cenário [ ]
+>FASE 09: [Boss]: Cenário [Cidade B]
 	FASE 9.1: Cenário [ ]
-FASE 10 [Boss]: Cenário [ ]
+>FASE 10: [Boss]: Cenário [Saída da Cidade B -> Começo de Floresta C]
+----------------------------------------------------------------------
+
+Ordem de fases (excluindo nesta linha fases secretas):
+Floresta A>> Floresta A>> Cidade A>> Cidade A>> Floresta B + Caverna A>> Caverna B + Floresta B>> Cidade B>> Cidade B>> Cidade B + Floresta C
+
+Observação: Serão necessário três florestas diferentes, duas cidades e uma caverna! Foco principal da busca dos "Assest" serão com base nesses ambientes
