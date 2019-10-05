@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/well.png-4496c2d1f9d680de65f7ee20481080dd.stex"
+path="res://.import/well.png-765d553e0e3c9e4830ebf74cf96cbeb1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/environment/props-sliced/well.png"
-dest_files=[ "res://.import/well.png-4496c2d1f9d680de65f7ee20481080dd.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/Objetos Cortados/well.png"
+dest_files=[ "res://.import/well.png-765d553e0e3c9e4830ebf74cf96cbeb1.stex" ]
 
 [params]
 

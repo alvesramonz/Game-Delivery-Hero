@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ground-wood-legs.png-f2c8a7fcf284152a3679725afa5fb466.stex"
+path="res://.import/ground-wood-legs.png-43868818047b0d2de6b8ce028256c103.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/environment/layers/sliced-tileset/ground-wood-legs.png"
-dest_files=[ "res://.import/ground-wood-legs.png-f2c8a7fcf284152a3679725afa5fb466.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/layers/sliced-tileset/ground-wood-legs.png"
+dest_files=[ "res://.import/ground-wood-legs.png-43868818047b0d2de6b8ce028256c103.stex" ]
 
 [params]
 

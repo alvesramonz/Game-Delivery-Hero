@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/left-slope.png-beb8b4d3d1b38300d22f5f8e67fb2f3b.stex"
+path="res://.import/left-slope.png-6c408067e47c09014749d79e35f3582b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/environment/layers/sliced-tileset/left-slope.png"
-dest_files=[ "res://.import/left-slope.png-beb8b4d3d1b38300d22f5f8e67fb2f3b.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/layers/sliced-tileset/left-slope.png"
+dest_files=[ "res://.import/left-slope.png-6c408067e47c09014749d79e35f3582b.stex" ]
 
 [params]
 

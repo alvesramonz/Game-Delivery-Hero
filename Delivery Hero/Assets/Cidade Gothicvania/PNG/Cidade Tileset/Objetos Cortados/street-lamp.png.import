@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/street-lamp.png-3313427ab18bf820cda10f01ac4269db.stex"
+path="res://.import/street-lamp.png-4b39aea0ef2c7a50a5931ca74ca5f1e1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/environment/props-sliced/street-lamp.png"
-dest_files=[ "res://.import/street-lamp.png-3313427ab18bf820cda10f01ac4269db.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/Objetos Cortados/street-lamp.png"
+dest_files=[ "res://.import/street-lamp.png-4b39aea0ef2c7a50a5931ca74ca5f1e1.stex" ]
 
 [params]
 

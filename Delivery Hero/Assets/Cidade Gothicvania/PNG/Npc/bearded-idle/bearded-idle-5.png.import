@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bearded-idle-5.png-bab5e9fdf5ff6cb53759b83c8b097835.stex"
+path="res://.import/bearded-idle-5.png-4499fd5229ccf0324438e2d156d5ffb6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/sprites/bearded-idle/bearded-idle-5.png"
-dest_files=[ "res://.import/bearded-idle-5.png-bab5e9fdf5ff6cb53759b83c8b097835.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Npc/bearded-idle/bearded-idle-5.png"
+dest_files=[ "res://.import/bearded-idle-5.png-4499fd5229ccf0324438e2d156d5ffb6.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stairs-wall.png-6f031aa81f81a3abb12c5210965fa820.stex"
+path="res://.import/stairs-wall.png-fabcd5683be29a739de947d70e95f9a6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/environment/layers/sliced-tileset/stairs-wall.png"
-dest_files=[ "res://.import/stairs-wall.png-6f031aa81f81a3abb12c5210965fa820.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/layers/sliced-tileset/stairs-wall.png"
+dest_files=[ "res://.import/stairs-wall.png-fabcd5683be29a739de947d70e95f9a6.stex" ]
 
 [params]
 

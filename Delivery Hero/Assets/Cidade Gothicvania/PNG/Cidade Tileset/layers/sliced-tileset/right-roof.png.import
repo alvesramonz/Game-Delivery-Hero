@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/right-roof.png-e47a970adbe9b38141a51e22dbbba7f4.stex"
+path="res://.import/right-roof.png-45d420671f62cbdfe1a649bea8c82e11.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/environment/layers/sliced-tileset/right-roof.png"
-dest_files=[ "res://.import/right-roof.png-e47a970adbe9b38141a51e22dbbba7f4.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/layers/sliced-tileset/right-roof.png"
+dest_files=[ "res://.import/right-roof.png-45d420671f62cbdfe1a649bea8c82e11.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ground-shadow.png-9a351f7e009a14cbed4040434c010a60.stex"
+path="res://.import/ground-shadow.png-eaa4ec15c50286fc395dd8ca51dd756b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/environment/layers/sliced-tileset/ground-shadow.png"
-dest_files=[ "res://.import/ground-shadow.png-9a351f7e009a14cbed4040434c010a60.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/layers/sliced-tileset/ground-shadow.png"
+dest_files=[ "res://.import/ground-shadow.png-eaa4ec15c50286fc395dd8ca51dd756b.stex" ]
 
 [params]
 

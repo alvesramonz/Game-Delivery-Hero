@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/top-left-wood.png-0f631731b307eb29fb9add2c7aa7bcef.stex"
+path="res://.import/top-left-wood.png-096020ff86750b08e267da0bdf111a5b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/environment/layers/sliced-tileset/top-left-wood.png"
-dest_files=[ "res://.import/top-left-wood.png-0f631731b307eb29fb9add2c7aa7bcef.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/layers/sliced-tileset/top-left-wood.png"
+dest_files=[ "res://.import/top-left-wood.png-096020ff86750b08e267da0bdf111a5b.stex" ]
 
 [params]
 
