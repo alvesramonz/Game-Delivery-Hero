@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Pântano Gothicvania/Pantano Tileset/Objetos Cortados/3.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 40.1811, 28.7755 )
+
+[node name="Tile_grama" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 40.6684, 30.9175 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/StaticBody2D"]
+position = Vector2( 0.237808, 0.951321 )
+shape = SubResource( 1 )

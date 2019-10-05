@@ -1,0 +1,166 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Pântano Gothicvania/Pantano Tileset/tileset.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Pântano Gothicvania/Pantano Tileset/mid-layer-01.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Pântano Gothicvania/Pantano Tileset/mid-layer-02.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 40.0983, 28.6008 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 6.43124, 26.4624 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 31.701, 16.3295 )
+
+[node name="Tile_floresta" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+editor/display_folded = true
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 31.7881, 5.11677, 80.4504, 58.7311 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite/StaticBody2D"]
+position = Vector2( 40.5821, 30.5683 )
+shape = SubResource( 1 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 80.0188, 1.13937 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 127.448, 6.5756, 80.6972, 57.2723 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2"]
+editor/display_folded = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2/StaticBody2D"]
+position = Vector2( 40.5821, 29.4333 )
+shape = SubResource( 1 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 170.545, 2.7117 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 223.485, 5.65352, 80.3009, 58.1944 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite3"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite3/StaticBody2D"]
+position = Vector2( 40.5821, 29.4333 )
+shape = SubResource( 1 )
+
+[node name="Sprite4" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 256.996, 5.43619 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 319.794, 7.46315, 15.151, 56.8054 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite4"]
+position = Vector2( 0, 32 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite4/StaticBody2D"]
+position = Vector2( 6.55209, -4.97059 )
+shape = SubResource( 2 )
+
+[node name="Sprite6" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 287.306, 6.11731 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 4.06943, 10.8411, 12.9413, 53.0068 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite6"]
+position = Vector2( 0, 32 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite6/StaticBody2D"]
+position = Vector2( 6.55209, -4.97059 )
+shape = SubResource( 2 )
+
+[node name="Sprite5" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 356.44, 41.5357 )
+z_index = -1
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 223.732, 80.6562, 65.0473, 32.6939 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite5"]
+position = Vector2( 0, 32 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite5/StaticBody2D"]
+position = Vector2( 32.2202, -15.2797 )
+shape = SubResource( 3 )
+
+[node name="Sprite7" type="Sprite" parent="."]
+position = Vector2( 450.435, 36.7679 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 164.144, 74.7757, 46.564, 34.7978 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite8" type="Sprite" parent="."]
+position = Vector2( 477.68, 84.1059 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 88.5396, 85.0398, 57.0785, 24.5337 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite9" type="Sprite" parent="."]
+position = Vector2( 419.103, 80.7003 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 25.9536, 69.7688, 46.8143, 39.8047 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="mid-layer-01" type="Sprite" parent="."]
+position = Vector2( 648.904, 133.483 )
+z_index = -1
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="mid-layer-02" type="Sprite" parent="."]
+position = Vector2( 868.313, 134.866 )
+scale = Vector2( 0.996812, 1 )
+z_index = -1
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
