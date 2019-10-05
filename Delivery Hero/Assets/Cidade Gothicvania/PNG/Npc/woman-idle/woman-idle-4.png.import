@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/woman-idle-4.png-0ad1fbb53d5dc3635d0f1da8f1f6cea4.stex"
+path="res://.import/woman-idle-4.png-67647d7ac6a6bea013c71a88f0b413e8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/sprites/woman-idle/woman-idle-4.png"
-dest_files=[ "res://.import/woman-idle-4.png-0ad1fbb53d5dc3635d0f1da8f1f6cea4.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Npc/woman-idle/woman-idle-4.png"
+dest_files=[ "res://.import/woman-idle-4.png-67647d7ac6a6bea013c71a88f0b413e8.stex" ]
 
 [params]
 

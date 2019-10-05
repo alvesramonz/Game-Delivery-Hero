@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/credits-text.png-cc5269f47993f43fc7dd9426ee38a977.stex"
+path="res://.import/credits-text.png-ed189bc7ba51563a05fbfc13e55575df.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/title-screen/credits-text.png"
-dest_files=[ "res://.import/credits-text.png-cc5269f47993f43fc7dd9426ee38a977.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Load Tileset/credits-text.png"
+dest_files=[ "res://.import/credits-text.png-ed189bc7ba51563a05fbfc13e55575df.stex" ]
 
 [params]
 

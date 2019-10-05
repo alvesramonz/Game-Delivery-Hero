@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/window-bars.png-b881a0cc50d9ee38c93b80e5fc1c89c1.stex"
+path="res://.import/window-bars.png-edca2f4c6f945323386d500f6a13329b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/environment/layers/sliced-tileset/window-bars.png"
-dest_files=[ "res://.import/window-bars.png-b881a0cc50d9ee38c93b80e5fc1c89c1.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/layers/sliced-tileset/window-bars.png"
+dest_files=[ "res://.import/window-bars.png-edca2f4c6f945323386d500f6a13329b.stex" ]
 
 [params]
 

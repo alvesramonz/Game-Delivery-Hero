@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/oldman-walk-12.png-ebaaef41136d71daf373b4ae21aa14c9.stex"
+path="res://.import/oldman-walk-12.png-b628ad73b6909c3176a00dac865efb93.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/sprites/oldman-walk/oldman-walk-12.png"
-dest_files=[ "res://.import/oldman-walk-12.png-ebaaef41136d71daf373b4ae21aa14c9.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Npc/oldman-walk/oldman-walk-12.png"
+dest_files=[ "res://.import/oldman-walk-12.png-b628ad73b6909c3176a00dac865efb93.stex" ]
 
 [params]
 

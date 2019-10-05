@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/crate-stack.png-061ff7be1b57538e994ed65a636b3dda.stex"
+path="res://.import/crate-stack.png-cc7a6ffbd2929b51c70884d74b3a9529.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/environment/props-sliced/crate-stack.png"
-dest_files=[ "res://.import/crate-stack.png-061ff7be1b57538e994ed65a636b3dda.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/Objetos Cortados/crate-stack.png"
+dest_files=[ "res://.import/crate-stack.png-cc7a6ffbd2929b51c70884d74b3a9529.stex" ]
 
 [params]
 

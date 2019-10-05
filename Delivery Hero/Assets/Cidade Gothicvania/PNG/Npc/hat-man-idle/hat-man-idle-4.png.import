@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hat-man-idle-4.png-286bd6e04a5612074f3f183c0ae5d9bc.stex"
+path="res://.import/hat-man-idle-4.png-5b31b9e127b848b7a0f2b58521b4918a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/sprites/hat-man-idle/hat-man-idle-4.png"
-dest_files=[ "res://.import/hat-man-idle-4.png-286bd6e04a5612074f3f183c0ae5d9bc.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Npc/hat-man-idle/hat-man-idle-4.png"
+dest_files=[ "res://.import/hat-man-idle-4.png-5b31b9e127b848b7a0f2b58521b4918a.stex" ]
 
 [params]
 

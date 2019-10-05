@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/woman-walk-4.png-6577716b12dc0f3139e8fe627869e99c.stex"
+path="res://.import/woman-walk-4.png-777a0187f9a0106b99df37946e770110.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/sprites/woman-walk/woman-walk-4.png"
-dest_files=[ "res://.import/woman-walk-4.png-6577716b12dc0f3139e8fe627869e99c.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Npc/woman-walk/woman-walk-4.png"
+dest_files=[ "res://.import/woman-walk-4.png-777a0187f9a0106b99df37946e770110.stex" ]
 
 [params]
 

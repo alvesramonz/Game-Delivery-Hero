@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hat-man-walk-1.png-273304147e58410ff23efa88a234a2bc.stex"
+path="res://.import/hat-man-walk-1.png-63156ae4e678c60ac014519785630479.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/sprites/hat-man-walk/hat-man-walk-1.png"
-dest_files=[ "res://.import/hat-man-walk-1.png-273304147e58410ff23efa88a234a2bc.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Npc/hat-man-walk/hat-man-walk-1.png"
+dest_files=[ "res://.import/hat-man-walk-1.png-63156ae4e678c60ac014519785630479.stex" ]
 
 [params]
 

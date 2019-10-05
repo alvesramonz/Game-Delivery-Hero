@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/oldman-idle-5.png-9a45ea1913ac4cf7a07f11fb3c174d06.stex"
+path="res://.import/oldman-idle-5.png-6ec44fbfb59bfffd1fe97331f03d155d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/sprites/oldman-idle/oldman-idle-5.png"
-dest_files=[ "res://.import/oldman-idle-5.png-9a45ea1913ac4cf7a07f11fb3c174d06.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Npc/oldman-idle/oldman-idle-5.png"
+dest_files=[ "res://.import/oldman-idle-5.png-6ec44fbfb59bfffd1fe97331f03d155d.stex" ]
 
 [params]
 

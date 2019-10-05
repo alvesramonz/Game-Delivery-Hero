@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/barrel.png-e23c9ccdf76aae2cba2ed98a290fe805.stex"
+path="res://.import/barrel.png-ff7593eb4f473c7729fb5da94f9dc429.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/environment/props-sliced/barrel.png"
-dest_files=[ "res://.import/barrel.png-e23c9ccdf76aae2cba2ed98a290fe805.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/Objetos Cortados/barrel.png"
+dest_files=[ "res://.import/barrel.png-ff7593eb4f473c7729fb5da94f9dc429.stex" ]
 
 [params]
 

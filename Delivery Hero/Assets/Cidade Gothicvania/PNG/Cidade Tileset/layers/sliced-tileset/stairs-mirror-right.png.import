@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stairs-mirror-right.png-852900cdee76b50a4d7c763f7b5e5237.stex"
+path="res://.import/stairs-mirror-right.png-0c70f3025b3e6bf6970367c3ec95d2ac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/GothicVania/PNG/environment/layers/sliced-tileset/stairs-mirror-right.png"
-dest_files=[ "res://.import/stairs-mirror-right.png-852900cdee76b50a4d7c763f7b5e5237.stex" ]
+source_file="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/layers/sliced-tileset/stairs-mirror-right.png"
+dest_files=[ "res://.import/stairs-mirror-right.png-0c70f3025b3e6bf6970367c3ec95d2ac.stex" ]
 
 [params]
 
