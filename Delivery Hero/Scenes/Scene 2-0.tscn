@@ -1,18 +1,27 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Tilemap/Tile_floresta.tres" type="TileSet" id=2]
+[ext_resource path="res://Tilemap/Tile_cidade.tres" type="TileSet" id=2]
+[ext_resource path="res://Tilemap/Tile_floresta.tres" type="TileSet" id=3]
 
 [node name="Scene 2-0" type="Node2D"]
 
 [node name="HUD" parent="." instance=ExtResource( 1 )]
+margin_left = 1.80499
+margin_right = 41.805
 
-[node name="Cenário" type="Node2D" parent="."]
+[node name="Cenario" type="Node2D" parent="."]
 
-[node name="Tilemaps" type="Node2D" parent="Cenário"]
+[node name="Tilemaps" type="Node2D" parent="Cenario"]
 
-[node name="Floresta" type="TileMap" parent="Cenário/Tilemaps"]
+[node name="Cidade" type="TileMap" parent="Cenario/Tilemaps"]
 tile_set = ExtResource( 2 )
+cell_size = Vector2( 4, 4 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 0, 9372301, 0, 0, 9372305, 0, 0, 9372307, 0, 0, 9372310, 0, 0, 9372314, 0, 0, 9372318, 0, 0, 9372322, 0, 0, 9372326, 0, 0, 9372330, 0, 0, 9372334, 0, 0, 9372338, 0, 0, 9372342, 0, 0, 9372346, 0, 0, 9372350, 0, 0, 9372353, 0, 0, 9372357, 0, 0, 9372361, 0, 0, 9372365, 0, 0, 9372369, 0, 0, 9372373, 0, 0 )
+
+[node name="Floresta" type="TileMap" parent="Cenario/Tilemaps"]
+tile_set = ExtResource( 3 )
 cell_size = Vector2( 4, 4 )
 format = 1
 tile_data = PoolIntArray( 5832701, 4, 0, 5767168, 9, 0, 5767220, 9, 0, 5767272, 10, 0, 5767324, 9, 0, 5767376, 9, 0, 5767428, 9, 0, 5767480, 10, 0, 5767532, 9, 0, 5767584, 10, 0, 5767636, 9, 0, 5767688, 9, 0, 5767740, 10, 0, 5767792, 9, 0, 5767844, 9, 0, 5767895, 3, 0, 5964503, 3, 0, 6225917, 4, 0, 6423255, 3, 0, 6881277, 4, 0, 7078615, 3, 0, 7667709, 4, 0, 7733975, 3, 0, 8454141, 4, 0, 8389335, 3, 0, 8913068, 8, 0, 8913194, 8, 0, 8978669, 6, 0, 8978744, 6, 0, 9043970, 2, 0, 9043986, 2, 0, 9044003, 0, 0, 9044020, 0, 0, 9044038, 1, 0, 9044039, 2, 0, 9044040, 1, 0, 9044041, 2, 0, 9044053, 2, 0, 9044072, 1, 0, 9044089, 0, 0, 9044108, 3, 0, 9044695, 3, 0, 9175037, 4, 0, 9109504, 4, 0, 9175432, 7, 0, 9175450, 2, 0, 9175469, 2, 0, 9175478, 2, 0, 9175496, 1, 0, 9175514, 0, 0, 9175530, 1, 0, 9175549, 2, 0, 9175565, 2, 0, 9175584, 2, 0, 9175602, 1, 0, 9175620, 0, 0, 9175639, 0, 0, 9175656, 2, 0, 9175671, 1, 0, 9175690, 3, 0, 9240984, 4, 0, 9437325, 5, 0, 9437341, 5, 0, 9437355, 5, 0, 9437369, 5, 0, 9437385, 5, 0, 9437400, 5, 0, 9437415, 5, 0, 9437430, 5, 0, 9437445, 5, 0, 9437460, 5, 0, 9437475, 5, 0, 9437490, 5, 0, 9437505, 5, 0, 9437520, 5, 0, 9437535, 5, 0, 9437549, 5, 0, 9437563, 5, 0, 9437577, 5, 0, 9437835, 5, 0, 9437851, 5, 0, 9437867, 5, 0, 9437882, 5, 0, 9437897, 5, 0 )
