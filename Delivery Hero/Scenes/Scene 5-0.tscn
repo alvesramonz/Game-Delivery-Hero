@@ -1,7 +1,52 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Tilemap/Tile_cidade.tres" type="TileSet" id=2]
+[ext_resource path="res://Tilemap/Tile_floresta.tres" type="TileSet" id=3]
+[ext_resource path="res://Tilemap/Tile_cemiterio.tres" type="TileSet" id=4]
+[ext_resource path="res://Tilemap/Tile_casas_cidade.tres" type="TileSet" id=5]
+[ext_resource path="res://Scenes/Extras/Background_cemiterio.tscn" type="PackedScene" id=6]
 
 [node name="Scene 5-0" type="Node2D"]
 
 [node name="HUD" parent="." instance=ExtResource( 1 )]
+
+[node name="Cenario" type="Node2D" parent="."]
+
+[node name="Tilemap" type="Node2D" parent="Cenario"]
+editor/display_folded = true
+
+[node name="Cidade" type="TileMap" parent="Cenario/Tilemap"]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 4, 4 )
+cell_quadrant_size = 4
+format = 1
+tile_data = PoolIntArray( 9306112, 7, 0, 9306116, 7, 0, 9306120, 7, 0, 9306124, 7, 0, 9306127, 7, 0, 9306130, 7, 0, 9306132, 7, 0, 9306135, 7, 0, 9306139, 7, 0, 9306143, 7, 0, 9306147, 7, 0, 9306151, 7, 0, 9306154, 7, 0, 9306158, 7, 0, 9306162, 7, 0, 9306166, 7, 0, 9306170, 7, 0, 9306174, 7, 0, 9306178, 7, 0, 9306182, 7, 0, 9306186, 7, 0, 9306190, 7, 0, 9306194, 7, 0, 9306197, 7, 0, 9306201, 7, 0, 9306205, 7, 0, 9306209, 7, 0, 9306213, 7, 0, 9306217, 7, 0, 9306221, 7, 0, 9306225, 7, 0, 9306229, 7, 0, 9306233, 7, 0, 9306237, 7, 0, 9306241, 7, 0, 9306245, 7, 0, 9306249, 7, 0, 9306253, 7, 0, 9306257, 7, 0, 9306261, 7, 0, 9306265, 7, 0, 9306268, 7, 0, 9306272, 7, 0, 9306276, 7, 0, 9306280, 7, 0, 9306284, 7, 0, 9306288, 7, 0, 9306292, 7, 0, 9306296, 7, 0, 9306297, 7, 0 )
+
+[node name="Floresta" type="TileMap" parent="Cenario/Tilemap"]
+tile_set = ExtResource( 3 )
+format = 1
+
+[node name="Cemiterio" type="TileMap" parent="Cenario/Tilemap"]
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 4, 4 )
+cell_quadrant_size = 4
+format = 1
+tile_data = PoolIntArray( 6554143, 7, 0, 7078247, 4, 0, 7405982, 17, 0, 7536870, 6, 0, 7537080, 17, 0, 7995827, 4, 0, 8061774, 4, 0, 8257545, 4, 0, 8257845, 0, 0, 8257901, 0, 0, 8389161, 5, 0, 8454489, 5, 0, 8520329, 5, 0, 8520421, 5, 0, 8586056, 5, 0, 8651139, 10, 0, 8651242, 16, 0, 8651552, 5, 0, 8782424, 14, 0, 8847397, 9, 0, 8847403, 9, 0, 8847409, 9, 0, 8847415, 9, 0, 8847421, 9, 0, 8847427, 9, 0, 8847509, 10, 0, 8913284, 8, 0, 8913388, 8, 0, 8913544, 14, 0, 8978941, 14, 0, 8979037, 14, 0, 8979119, 14, 0, 9044228, 14, 0, 9044563, 14, 0, 9175237, 3, 0, 9175253, 3, 0, 9175269, 3, 0, 9175285, 3, 0, 9175301, 3, 0, 9175317, 3, 0, 9175333, 3, 0, 9175357, 3, 0, 9175373, 3, 0, 9175389, 3, 0, 9175909, 3, 0, 9240765, 1, 0 )
+
+[node name="Cemiterio2" type="TileMap" parent="Cenario/Tilemap"]
+z_index = 1
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 4, 4 )
+cell_quadrant_size = 4
+format = 1
+tile_data = PoolIntArray( 8257808, 0, 0, 8258070, 0, 0, 8258190, 0, 0, 8258246, 0, 0, 8258397, 0, 0, 8323252, 4, 0, 8519866, 5, 0, 9109688, 8, 0, 9175280, 3, 0, 9175296, 3, 0, 9175371, 3, 0, 9175387, 3, 0, 9175404, 3, 0, 9175413, 3, 0, 9175429, 3, 0, 9175445, 3, 0, 9175461, 3, 0, 9175475, 3, 0, 9175477, 3, 0, 9175493, 3, 0, 9175509, 3, 0, 9175525, 3, 0, 9175541, 3, 0, 9175542, 3, 0, 9175558, 3, 0, 9175582, 3, 0, 9175598, 3, 0, 9175614, 3, 0, 9175630, 3, 0, 9175646, 3, 0, 9175662, 3, 0, 9175678, 3, 0, 9175702, 3, 0, 9175718, 3, 0, 9175734, 3, 0, 9175758, 3, 0, 9175774, 3, 0, 9175790, 3, 0, 9175805, 3, 0, 9175821, 3, 0, 9175837, 3, 0, 9175853, 3, 0, 9175869, 3, 0, 9175885, 3, 0 )
+
+[node name="Casas" type="TileMap" parent="Cenario/Tilemap"]
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 4, 4 )
+cell_quadrant_size = 4
+format = 1
+tile_data = PoolIntArray( 6488152, 0, 0 )
+
+[node name="Background_cemiterio" parent="Cenario" instance=ExtResource( 6 )]

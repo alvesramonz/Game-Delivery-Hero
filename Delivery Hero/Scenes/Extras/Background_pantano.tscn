@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/Pântano Gothicvania/Pantano Tileset/background.png" type="Texture" id=1]
+
+[node name="Background_pantano" type="Node2D"]
+editor/display_folded = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Pantano" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2( 96, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/Pantano"]
+position = Vector2( 50, 480 )
+texture = ExtResource( 1 )

@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/Objetos Cortados/barrel.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/Objetos Cortados/crate.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/Objetos Cortados/sign.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/Objetos Cortados/street-lamp.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/Objetos Cortados/wagon.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/Objetos Cortados/well.png" type="Texture" id=6]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 11.9167
+height = 5.74552
+
+[sub_resource type="SegmentShape2D" id=2]
+a = Vector2( -31.1463, -4.47121 )
+b = Vector2( -15.1381, -4.46406 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 19.5224, 17.5111 )
+
+[node name="Props_cidade" type="Node2D"]
+
+[node name="barrel" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 19.4554, 23.5112 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="barrel"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="barrel/StaticBody2D"]
+position = Vector2( 0, 0.257023 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="barrel/StaticBody2D"]
+position = Vector2( 23.1604, -8.61355 )
+shape = SubResource( 2 )
+
+[node name="crate" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 145.879, 65.4293 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="crate"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="crate/StaticBody2D"]
+shape = SubResource( 3 )
+
+[node name="sign" type="Sprite" parent="."]
+position = Vector2( 206.963, 59.9217 )
+texture = ExtResource( 3 )
+
+[node name="street-lamp" type="Sprite" parent="."]
+position = Vector2( 259.786, 57.6686 )
+texture = ExtResource( 4 )
+
+[node name="wagon" type="Sprite" parent="."]
+position = Vector2( 334.889, 73.6906 )
+texture = ExtResource( 5 )
+
+[node name="well" type="Sprite" parent="."]
+position = Vector2( 432.273, 79.4486 )
+texture = ExtResource( 6 )

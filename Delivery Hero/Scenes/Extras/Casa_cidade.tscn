@@ -1,0 +1,229 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/Objetos Cortados/house-a.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/Objetos Cortados/house-b.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/Objetos Cortados/house-c.png" type="Texture" id=3]
+
+[sub_resource type="SegmentShape2D" id=1]
+a = Vector2( -83.0007, -35.3704 )
+b = Vector2( -29.9217, -88.4508 )
+
+[sub_resource type="SegmentShape2D" id=2]
+a = Vector2( -30.7849, -88.0159 )
+b = Vector2( 32.9948, -87.9925 )
+
+[sub_resource type="SegmentShape2D" id=3]
+a = Vector2( 31.9045, -88.4265 )
+b = Vector2( 81.9257, -37.4169 )
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 2.03098
+height = 4.00385
+
+[sub_resource type="SegmentShape2D" id=5]
+a = Vector2( -84.0529, -114.516 )
+b = Vector2( 76.0624, -114.516 )
+
+[sub_resource type="RectangleShape2D" id=6]
+
+[sub_resource type="SegmentShape2D" id=7]
+a = Vector2( 7.8526, -33.9804 )
+b = Vector2( 36.8879, 54.1132 )
+
+[sub_resource type="SegmentShape2D" id=8]
+a = Vector2( 11.6777, -6.56572 )
+b = Vector2( -6.32318, 81.736 )
+
+[sub_resource type="SegmentShape2D" id=9]
+a = Vector2( -95.5131, -72.9763 )
+b = Vector2( 92.4641, -72.9885 )
+
+[sub_resource type="SegmentShape2D" id=10]
+a = Vector2( 4.87958, 14.925 )
+b = Vector2( 41.8891, 14.925 )
+
+[sub_resource type="SegmentShape2D" id=11]
+a = Vector2( 28.5792, -37.4519 )
+b = Vector2( 23.5656, -26.2893 )
+
+[sub_resource type="SegmentShape2D" id=12]
+a = Vector2( -23.4087, 4.24217 )
+b = Vector2( -15.6388, 16.4068 )
+
+[sub_resource type="SegmentShape2D" id=13]
+a = Vector2( -94.0135, -74.2063 )
+b = Vector2( -108.004, -0.23291 )
+
+[sub_resource type="SegmentShape2D" id=14]
+a = Vector2( -30.3004, -29.8897 )
+b = Vector2( -12.376, 43.4994 )
+
+[node name="Casa_cidade" type="Node2D"]
+
+[node name="house-a" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 96.8109, 197.822 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="house-a"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="house-a/StaticBody2D"]
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="house-a/StaticBody2D"]
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="house-a/StaticBody2D"]
+shape = SubResource( 3 )
+
+[node name="house-b" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 377.143, 170.122 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="house-b"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( -77.0229, -114.979 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D20" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( -82.5944, -115.02 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( -69.9743, -114.979 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( -63.0177, -114.979 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( -56.0151, -114.933 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( -49.0125, -114.979 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( -21.0021, -114.979 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( -12.986, -115.071 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( -5.9834, -114.933 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( 0.973145, -115.071 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( 8.02182, -115.071 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( 14.9784, -114.979 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( 22.9945, -115.025 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D13" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( 30.0432, -115.071 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D14" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( 36.493, -114.979 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D15" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( 44.0023, -115.025 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D16" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( 51.0049, -114.933 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D17" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( 58.0075, -114.979 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D18" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( 65.0101, -114.979 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D19" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( 72.0127, -115.025 )
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D21" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D22" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( -36.0298, -112.056 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D23" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( 66.7526, -81.5626 )
+shape = SubResource( 7 )
+
+[node name="CollisionShape2D24" type="CollisionShape2D" parent="house-b/StaticBody2D"]
+position = Vector2( -94.2048, -108.478 )
+shape = SubResource( 8 )
+
+[node name="house-c" type="Sprite" parent="."]
+editor/display_folded = true
+position = Vector2( 652.045, 200.039 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="house-c"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="house-c/StaticBody2D"]
+shape = SubResource( 9 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="house-c/StaticBody2D"]
+position = Vector2( -62.3954, -98.8947 )
+shape = SubResource( 10 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="house-c/StaticBody2D"]
+position = Vector2( 27.6185, -98.9844 )
+shape = SubResource( 10 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="house-c/StaticBody2D"]
+position = Vector2( 5.28882, -47.4889 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="house-c/StaticBody2D"]
+position = Vector2( -84.6859, -47.4068 )
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="house-c/StaticBody2D"]
+position = Vector2( 1.5871, -89.001 )
+shape = SubResource( 12 )
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="house-c/StaticBody2D"]
+position = Vector2( 91.6516, -88.979 )
+shape = SubResource( 12 )
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="house-c/StaticBody2D"]
+shape = SubResource( 13 )
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="house-c/StaticBody2D"]
+position = Vector2( 121.407, -43.6799 )
+shape = SubResource( 14 )
