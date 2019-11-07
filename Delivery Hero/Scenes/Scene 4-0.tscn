@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilemap/Tile_cidade.tres" type="TileSet" id=2]
 [ext_resource path="res://Tilemap/Tile_casas_cidade.tres" type="TileSet" id=3]
-[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/layers/background.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/layers/middleground.png" type="Texture" id=5]
+[ext_resource path="res://Tilemap/Props/Tile_props_cidade.tres" type="TileSet" id=4]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/layers/background.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Cidade Tileset/layers/middleground.png" type="Texture" id=6]
 
 [node name="Scene 4-0" type="Node2D"]
 
@@ -28,7 +29,18 @@ cell_quadrant_size = 4
 format = 1
 tile_data = PoolIntArray( 5505079, 1, 0, 5505375, 1, 0, 5505624, 1, 0, 5505968, 1, 0, 5506302, 1, 0, 6292582, 0, 0, 6488065, 2, 0, 6488227, 0, 0, 6488318, 2, 0, 6488319, 2, 0, 6488374, 0, 0, 6488491, 2, 0, 6488547, 0, 0, 6488754, 0, 0, 6488841, 2, 0, 6489235, 2, 0, 6489236, 2, 0 )
 
+[node name="Props" type="Node2D" parent="Cenario"]
+
+[node name="Tilemaps" type="Node2D" parent="Cenario/Props"]
+
+[node name="Props_cidade" type="TileMap" parent="Cenario/Props/Tilemaps"]
+tile_set = ExtResource( 4 )
+cell_size = Vector2( 4, 4 )
+cell_quadrant_size = 4
+tile_data = PoolIntArray( 7472229, 3, 0, 7733257, 3, 0, 7733305, 3, 0, 7733351, 3, 0, 7733390, 3, 0, 7733454, 3, 0, 7733499, 3, 0, 7733537, 3, 0, 7733596, 3, 0, 7733647, 3, 0, 7733687, 3, 0, 7733740, 3, 0, 7733783, 3, 0, 7733834, 3, 0, 7733899, 3, 0, 7734002, 3, 0, 7734033, 3, 0, 7734093, 3, 0, 7734142, 3, 0, 7734185, 3, 0, 7734241, 3, 0, 7734297, 3, 0, 7734428, 3, 0, 7734472, 3, 0, 7734522, 3, 0, 7734586, 3, 0, 7799501, 3, 0, 7996557, 2, 0, 8192202, 2, 0, 8192522, 2, 0, 8192729, 2, 0, 8257588, 2, 0, 8258211, 4, 0, 8323231, 4, 0, 8323461, 2, 0, 8323478, 4, 0, 8323896, 2, 0, 8324166, 4, 0, 8324291, 2, 0, 8388689, 2, 0, 8388911, 2, 0, 8388937, 2, 0, 8389233, 2, 0, 8389591, 2, 0, 8389924, 2, 0, 8454369, 5, 0, 8455160, 5, 0, 8913214, 1, 0, 8913623, 1, 0, 8978494, 1, 0, 8979486, 0, 0, 9043969, 0, 0, 9043975, 0, 0, 9044170, 0, 0, 9044322, 0, 0, 9044327, 0, 0, 9044396, 0, 0, 9044609, 0, 0, 9044615, 0, 0, 9044832, 0, 0, 9044838, 0, 0, 9045083, 0, 0, 9045088, 0, 0, 9045137, 0, 0 )
+
 [node name="Background" type="Node2D" parent="Cenario"]
+editor/display_folded = true
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="Cenario/Background"]
 
@@ -38,7 +50,7 @@ motion_mirroring = Vector2( 593, 0 )
 [node name="Sprite" type="Sprite" parent="Cenario/Background/ParallaxBackground/Ceu"]
 position = Vector2( 298.508, 217.298 )
 scale = Vector2( 1.55716, 1.51146 )
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 
 [node name="ParallaxBackground2" type="ParallaxBackground" parent="Cenario/Background"]
 
@@ -48,4 +60,4 @@ motion_mirroring = Vector2( 704, 0 )
 [node name="Sprite" type="Sprite" parent="Cenario/Background/ParallaxBackground2/Cidade"]
 position = Vector2( 354.393, 342.995 )
 scale = Vector2( 1.8345, 1.78251 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )

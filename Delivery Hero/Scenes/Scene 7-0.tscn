@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilemap/Tile_cemiterio.tres" type="TileSet" id=2]
 [ext_resource path="res://Tilemap/Tile_cidade.tres" type="TileSet" id=3]
 [ext_resource path="res://Tilemap/Tile_casas_cidade.tres" type="TileSet" id=4]
-[ext_resource path="res://Scenes/Extras/Background.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Tilemap/Props/Tile_props_cidade.tres" type="TileSet" id=5]
+[ext_resource path="res://Scenes/Extras/Background.tscn" type="PackedScene" id=6]
 
 [node name="Scene 7-0" type="Node2D"]
 
@@ -44,4 +45,14 @@ cell_quadrant_size = 4
 format = 1
 tile_data = PoolIntArray( 5505479, 1, 0, 5505658, 1, 0, 5505831, 1, 0, 6488475, 0, 0, 6488643, 2, 0, 6488750, 0, 0, 6488922, 2, 0, 6489024, 0, 0, 6489066, 0, 0 )
 
-[node name="Background" parent="Cenario" instance=ExtResource( 5 )]
+[node name="Props" type="Node2D" parent="Cenario"]
+
+[node name="Tilemaps" type="Node2D" parent="Cenario/Props"]
+
+[node name="Props_cidade" type="TileMap" parent="Cenario/Props/Tilemaps"]
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 4, 4 )
+cell_quadrant_size = 4
+tile_data = PoolIntArray( 7733579, 3, 0, 7733612, 3, 0, 7733648, 3, 0, 7733697, 3, 0, 7733747, 3, 0, 7733825, 3, 0, 7733875, 3, 0, 7733929, 3, 0, 7733970, 3, 0, 7734013, 3, 0, 7734066, 3, 0, 7734138, 3, 0, 7734201, 3, 0, 7734252, 3, 0, 8324000, 4, 0, 8324129, 4, 0, 8389050, 2, 0, 8389089, 2, 0, 8389280, 2, 0, 8389324, 2, 0, 8454654, 5, 0, 8913233, 1, 0, 8913590, 1, 0, 8979286, 1, 0, 8979427, 1, 0, 9044632, 0, 0, 9044638, 0, 0, 9044800, 0, 0, 9045019, 0, 0 )
+
+[node name="Background" parent="Cenario" instance=ExtResource( 6 )]
