@@ -1,0 +1,52 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Enemies/Phantom.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Montros/Phantom/0.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Montros/Phantom/1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Montros/Phantom/2.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Montros/Phantom/3.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Montros/Phantom/4.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Montros/Phantom/5.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Montros/Phantom/6.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Montros/Phantom/7.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Montros/Phantom/8.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Montros/Phantom/9.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Montros/Phantom/10.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Montros/Phantom/11.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Montros/Phantom/12.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Montros/Phantom/16.png" type="Texture" id=15]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "Stand",
+"speed": 6.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 11.3175
+height = 25.7621
+
+[node name="Phantom" type="StaticBody2D"]
+position = Vector2( 2.6859, 3.17424 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 3.90676, 4.15094 )
+scale = Vector2( 1.26045, 1.20755 )
+frames = SubResource( 1 )
+animation = "Walk"
+frame = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 5.37259, 4.5348 )
+shape = SubResource( 2 )
