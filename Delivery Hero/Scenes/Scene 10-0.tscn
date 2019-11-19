@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilemap/Tile_cidade.tres" type="TileSet" id=2]
@@ -6,6 +6,14 @@
 [ext_resource path="res://Tilemap/Tile_floresta.tres" type="TileSet" id=4]
 [ext_resource path="res://Tilemap/Props/Tile_props_cidade.tres" type="TileSet" id=5]
 [ext_resource path="res://Scenes/Extras/Background_cidade_noite.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Enemies/Bat2.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Enemies/Bat1.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Enemies/GhostFire.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Enemies/GhostHead.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Enemies/Mage.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Enemies/Phantom.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Enemies/Skeleton1.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scripts/Portais/Portal10-E.gd" type="Script" id=14]
 
 [node name="Scene 10-0" type="Node2D"]
 
@@ -55,3 +63,194 @@ format = 1
 tile_data = PoolIntArray( 7733251, 3, 0, 7733307, 3, 0, 7733342, 3, 0, 7733417, 3, 0, 7733502, 3, 0, 7733560, 3, 0, 7733597, 3, 0, 7733673, 3, 0, 7733718, 3, 0, 7733746, 3, 0, 7733781, 3, 0, 7733806, 3, 0, 7733869, 3, 0, 7733919, 3, 0, 7733988, 3, 0, 7734047, 3, 0, 8192174, 2, 0, 8192356, 2, 0, 8192481, 2, 0, 8193007, 4, 0, 8258367, 4, 0, 8258392, 4, 0, 8258476, 4, 0, 8323109, 4, 0, 8323252, 4, 0, 8323437, 4, 0, 8323610, 4, 0, 8323673, 4, 0, 8323839, 4, 0, 8388730, 2, 0, 8389188, 2, 0, 8454161, 5, 0, 8454533, 5, 0, 8454788, 5, 0, 8454893, 5, 0, 8978564, 1, 0, 8978706, 1, 0, 8978752, 1, 0, 8979026, 1, 0, 8979394, 0, 0, 8979400, 0, 0, 9044236, 0, 0, 9044374, 0, 0, 9044380, 0, 0, 9044533, 0, 0, 9044629, 0, 0, 9044694, 0, 0, 9044758, 0, 0, 9044764, 0, 0 )
 
 [node name="Background_cidade_noite" parent="Cenario" instance=ExtResource( 6 )]
+position = Vector2( 233.795, -22.1607 )
+
+[node name="Inimigos" type="Node2D" parent="."]
+
+[node name="Bat2" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 75.7895, 362.105 )
+
+[node name="Bat3" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 380, 295.789 )
+
+[node name="Bat4" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 624.211, 374.737 )
+
+[node name="Bat5" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 757.895, 255.789 )
+
+[node name="Bat6" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 1298.95, 340 )
+
+[node name="Bat7" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 1713.68, 376.842 )
+
+[node name="Bat8" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 1958.95, 315.789 )
+
+[node name="Bat9" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 2304.21, 276.842 )
+
+[node name="Bat10" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 2584.21, 373.684 )
+
+[node name="Bat11" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 2864.21, 345.263 )
+
+[node name="Bat12" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 3010.53, 416.842 )
+
+[node name="Bat13" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 3594.74, 371.579 )
+
+[node name="Bat14" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 4055.79, 390.526 )
+
+[node name="Bat15" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 4147.37, 444.21 )
+
+[node name="Bat1" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 208.451, 408.521 )
+
+[node name="Bat16" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 501.055, 294.692 )
+
+[node name="Bat17" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 806.228, 407.124 )
+
+[node name="Bat18" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 1142.83, 286.312 )
+
+[node name="Bat19" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 1411.69, 231.143 )
+
+[node name="Bat20" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 1670.07, 386.872 )
+
+[node name="Bat21" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 1485.01, 419.694 )
+
+[node name="Bat22" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 2066.03, 305.865 )
+
+[node name="Bat23" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 2429.86, 319.134 )
+
+[node name="Bat24" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 2716.18, 314.245 )
+
+[node name="Bat25" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 3125.41, 317.039 )
+
+[node name="Bat26" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 3337.7, 398.046 )
+
+[node name="Bat27" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 3852.37, 311.452 )
+
+[node name="Bat28" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 3999.03, 412.711 )
+
+[node name="Bat29" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 3752.51, 405.728 )
+
+[node name="GhostFire" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 281.783, 551.097 )
+
+[node name="GhostFire2" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 599.343, 551.097 )
+
+[node name="GhostFire3" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 744.156, 550.362 )
+
+[node name="GhostFire4" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 1343.26, 551.832 )
+
+[node name="GhostFire5" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 1694.63, 551.097 )
+
+[node name="GhostFire6" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 2036.45, 552.567 )
+
+[node name="GhostFire7" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 2733.31, 548.892 )
+
+[node name="GhostHead" parent="Inimigos" instance=ExtResource( 10 )]
+position = Vector2( 302.146, 461.095 )
+
+[node name="GhostHead2" parent="Inimigos" instance=ExtResource( 10 )]
+position = Vector2( 1066.82, 509.782 )
+
+[node name="GhostHead3" parent="Inimigos" instance=ExtResource( 10 )]
+position = Vector2( 1439.13, 375.177 )
+
+[node name="GhostHead4" parent="Inimigos" instance=ExtResource( 10 )]
+position = Vector2( 1646.31, 458.231 )
+
+[node name="GhostHead5" parent="Inimigos" instance=ExtResource( 10 )]
+position = Vector2( 2170.41, 472.636 )
+
+[node name="GhostHead6" parent="Inimigos" instance=ExtResource( 10 )]
+position = Vector2( 2445.2, 409.478 )
+
+[node name="GhostHead7" parent="Inimigos" instance=ExtResource( 10 )]
+position = Vector2( 3088.97, 487.04 )
+
+[node name="GhostHead8" parent="Inimigos" instance=ExtResource( 10 )]
+position = Vector2( 3628.58, 461.555 )
+
+[node name="Mage" parent="Inimigos" instance=ExtResource( 11 )]
+position = Vector2( 1003.86, 545.546 )
+
+[node name="Mage2" parent="Inimigos" instance=ExtResource( 11 )]
+position = Vector2( 1223.34, 368.927 )
+
+[node name="Mage3" parent="Inimigos" instance=ExtResource( 11 )]
+position = Vector2( 1890.38, 308.053 )
+
+[node name="Mage4" parent="Inimigos" instance=ExtResource( 11 )]
+position = Vector2( 2353.36, 545.546 )
+
+[node name="Mage5" parent="Inimigos" instance=ExtResource( 11 )]
+position = Vector2( 2925.23, 370.641 )
+
+[node name="Phantom" parent="Inimigos" instance=ExtResource( 12 )]
+position = Vector2( 415.003, 314.004 )
+
+[node name="Phantom2" parent="Inimigos" instance=ExtResource( 12 )]
+position = Vector2( 1332.65, 370.726 )
+
+[node name="Phantom3" parent="Inimigos" instance=ExtResource( 12 )]
+position = Vector2( 1814.16, 554.759 )
+
+[node name="Phantom4" parent="Inimigos" instance=ExtResource( 12 )]
+position = Vector2( 2944.82, 552.868 )
+
+[node name="Skeleton1" parent="Inimigos" instance=ExtResource( 13 )]
+position = Vector2( 333.713, 554.722 )
+
+[node name="Skeleton2" parent="Inimigos" instance=ExtResource( 13 )]
+position = Vector2( 854.139, 553.864 )
+
+[node name="Skeleton3" parent="Inimigos" instance=ExtResource( 13 )]
+position = Vector2( 1151.65, 553.864 )
+
+[node name="Skeleton4" parent="Inimigos" instance=ExtResource( 13 )]
+position = Vector2( 1920.71, 554.722 )
+
+[node name="Skeleton5" parent="Inimigos" instance=ExtResource( 13 )]
+position = Vector2( 2512.41, 553.101 )
+
+[node name="Skeleton6" parent="Inimigos" instance=ExtResource( 13 )]
+position = Vector2( 2256.82, 372.62 )
+
+[node name="Portal" type="Node2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Portal"]
+script = ExtResource( 14 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal/Area2D"]
+[connection signal="body_entered" from="Portal/Area2D" to="Portal/Area2D" method="_on_Area2D_body_entered"]

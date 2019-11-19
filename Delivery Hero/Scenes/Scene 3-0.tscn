@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilemap/Tile_cidade.tres" type="TileSet" id=2]
@@ -6,6 +6,14 @@
 [ext_resource path="res://Tilemap/Tile_casas_cidade.tres" type="TileSet" id=4]
 [ext_resource path="res://Tilemap/Props/Tile_props_cidade.tres" type="TileSet" id=5]
 [ext_resource path="res://Scenes/Extras/Background.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Enemies/Mage.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Enemies/GhostFire.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Enemies/Bat 3.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scripts/Portais/Portal3-4.gd" type="Script" id=10]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 16.4731
+height = 24.5483
 
 [node name="Scene 3-0" type="Node2D"]
 
@@ -37,6 +45,7 @@ format = 1
 tile_data = PoolIntArray( 5439732, 1, 0, 5440149, 1, 0, 6422683, 0, 0, 6422834, 2, 0, 6422996, 0, 0, 6423041, 0, 0, 6423085, 0, 0, 6423296, 2, 0 )
 
 [node name="Props" type="Node2D" parent="Cenario"]
+editor/display_folded = true
 
 [node name="Tilemaps" type="Node2D" parent="Cenario/Props"]
 editor/display_folded = true
@@ -48,6 +57,84 @@ cell_quadrant_size = 4
 format = 1
 tile_data = PoolIntArray( 7667883, 3, 0, 7667949, 3, 0, 7668027, 3, 0, 7668103, 3, 0, 7668186, 3, 0, 7668221, 3, 0, 7668266, 3, 0, 7668345, 3, 0, 7668421, 3, 0, 7668486, 3, 0, 7798788, 3, 0, 7798816, 3, 0, 7798848, 3, 0, 7798883, 3, 0, 8061284, 2, 0, 8126658, 2, 0, 8192281, 2, 0, 8192453, 4, 0, 8192613, 4, 0, 8257679, 4, 0, 8258132, 2, 0, 8258223, 2, 0, 8323301, 1, 0, 8323616, 2, 0, 8388977, 5, 0, 8389365, 5, 0, 8847581, 1, 0, 8847589, 1, 0, 8847859, 1, 0, 8978675, 0, 0, 8978682, 0, 0, 8978723, 0, 0, 8978771, 0, 0, 8979025, 0, 0, 8979071, 0, 0, 8979176, 0, 0, 8979182, 0, 0 )
 
-[node name="SemNOME" type="Node2D" parent="Cenario/Props"]
-
 [node name="Background" parent="Cenario" instance=ExtResource( 6 )]
+
+[node name="Inimigos" type="Node2D" parent="."]
+
+[node name="Mage" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 815.344, 541.398 )
+
+[node name="Mage2" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 1772.64, 419.106 )
+
+[node name="Mage3" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 2147.83, 361.448 )
+
+[node name="Mage4" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 2469.89, 541.7 )
+
+[node name="Mage5" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 2952.66, 540.44 )
+
+[node name="GhostFire" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 1208.44, 547.436 )
+
+[node name="GhostFire2" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 1403.51, 547.436 )
+
+[node name="GhostFire3" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 1852.66, 546.461 )
+
+[node name="GhostFire4" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 2088.2, 546.461 )
+
+[node name="GhostFire5" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 1826.81, 545.486 )
+
+[node name="GhostFire6" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 2609.65, 545.486 )
+
+[node name="GhostFire7" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 2759.73, 547.246 )
+
+[node name="Bat 3" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 1002.43, 441.839 )
+
+[node name="Bat 4" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 1460.85, 375.497 )
+
+[node name="Bat 5" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 2389.64, 333.701 )
+
+[node name="Bat 6" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 2491.15, 473.02 )
+
+[node name="Bat 7" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 3065.01, 301.857 )
+
+[node name="Bat 8" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 3062.35, 525.43 )
+
+[node name="Bat 9" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 2859.35, 310.481 )
+
+[node name="Bat 10" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 2235.07, 510.835 )
+
+[node name="Bat 11" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 1510.61, 466.385 )
+
+[node name="Portal" type="Node2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Portal"]
+position = Vector2( 0.115967, -1.85577 )
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal/Area2D"]
+position = Vector2( 3244.12, 546.228 )
+shape = SubResource( 1 )
+[connection signal="body_entered" from="Portal/Area2D" to="Portal/Area2D" method="_on_Area2D_body_entered"]
+[connection signal="input_event" from="Portal/Area2D" to="Portal/Area2D" method="_on_Area2D_input_event"]

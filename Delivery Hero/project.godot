@@ -18,6 +18,10 @@ _global_script_class_icons={
 config/name="Delivery Hero"
 run/main_scene="res://Scenes/Scene 1-0.tscn"
 
+[autoload]
+
+Global="*res://Global.gd"
+
 [importer_defaults]
 
 texture={

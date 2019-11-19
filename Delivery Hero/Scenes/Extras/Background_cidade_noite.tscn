@@ -15,6 +15,86 @@ position = Vector2( 66.5, 300.514 )
 scale = Vector2( 1.38542, 2.68291 )
 texture = ExtResource( 1 )
 
+[node name="night-town-background-sky2" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 325.251, 300.514 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky3" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 583.652, 299.254 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky4" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 842.244, 299.989 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky5" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 1098.92, 296.472 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky6" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 1350.33, 298.23 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky7" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 1603.49, 296.472 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky8" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 1860.17, 301.747 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky9" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 2115.09, 301.747 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky10" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 2370.02, 298.23 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky11" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 2626.69, 298.23 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky12" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 2885.56, 298.23 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky13" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 3141.26, 299.989 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky14" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 3397.89, 300.075 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky15" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 3653.93, 299.174 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky16" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 3908.65, 299.131 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
+[node name="night-town-background-sky17" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 3977.67, 299.989 )
+scale = Vector2( 1.38542, 2.68291 )
+texture = ExtResource( 1 )
+
 [node name="ParallaxBackground2" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground2"]
@@ -22,5 +102,85 @@ motion_mirroring = Vector2( 124, 0 )
 
 [node name="night-town-background-forest" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
 position = Vector2( 104.007, 432.535 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest9" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 2157.15, 434.122 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest5" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 1130.04, 432.535 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest14" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 3183.19, 434.122 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest2" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 430.954, 432.551 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest13" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 2484.1, 434.138 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest7" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 1456.99, 432.551 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest12" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 3510.13, 434.138 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest3" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 755.256, 432.088 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest16" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 2808.4, 433.675 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest8" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 1781.29, 432.088 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest15" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 3834.44, 433.675 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest17" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 3834.44, 433.675 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest4" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 801.585, 431.625 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest11" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 2854.73, 433.211 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest6" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 1827.62, 431.625 )
+scale = Vector2( 3.23989, 3.20595 )
+texture = ExtResource( 2 )
+
+[node name="night-town-background-forest10" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
+position = Vector2( 3942.76, 435.796 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )

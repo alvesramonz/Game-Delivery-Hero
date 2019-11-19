@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilemap/Tile_cidade.tres" type="TileSet" id=2]
+[ext_resource path="res://Scripts/Portais/Portal9-10.gd" type="Script" id=3]
 
 [node name="Scene 9-0" type="Node2D"]
 
@@ -18,3 +19,14 @@ format = 1
 
 [node name="TileMap" type="TileMap" parent="Cenario/Tilemap"]
 format = 1
+
+[node name="Portal" type="Node2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Portal"]
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal/Area2D"]
+[connection signal="body_entered" from="Portal/Area2D" to="Portal/Area2D" method="_on_Area2D_body_entered"]

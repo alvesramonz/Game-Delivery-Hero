@@ -26,7 +26,8 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "Idle"
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -1.85571, 3.2475 )
+position = Vector2( 2.9905, 1.99108 )
 shape = SubResource( 2 )

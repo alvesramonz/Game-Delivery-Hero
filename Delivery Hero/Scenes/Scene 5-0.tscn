@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Tilemap/Tile_cidade.tres" type="TileSet" id=2]
@@ -7,12 +7,24 @@
 [ext_resource path="res://Tilemap/Tile_casas_cidade.tres" type="TileSet" id=5]
 [ext_resource path="res://Tilemap/Props/Tile_props_cidade.tres" type="TileSet" id=6]
 [ext_resource path="res://Scenes/Extras/Background_cemiterio.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Enemies/Bat2.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Enemies/GhostBlue.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Enemies/GhostHead.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Enemies/Hand.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Enemies/HellCat.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Enemies/Spider.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scripts/Portais/Portal5-6.gd" type="Script" id=14]
+
+[sub_resource type="SegmentShape2D" id=1]
+a = Vector2( -0.205811, -65.4701 )
+b = Vector2( 0.0229492, 91.4707 )
 
 [node name="Scene 5-0" type="Node2D"]
 
 [node name="HUD" parent="." instance=ExtResource( 1 )]
 
 [node name="Cenario" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Tilemap" type="Node2D" parent="Cenario"]
 editor/display_folded = true
@@ -22,7 +34,7 @@ tile_set = ExtResource( 2 )
 cell_size = Vector2( 4, 4 )
 cell_quadrant_size = 4
 format = 1
-tile_data = PoolIntArray( 9306112, 7, 0, 9306116, 7, 0, 9306120, 7, 0, 9306124, 7, 0, 9306127, 7, 0, 9306130, 7, 0, 9306132, 7, 0, 9306135, 7, 0, 9306139, 7, 0, 9306143, 7, 0, 9306147, 7, 0, 9306151, 7, 0, 9306154, 7, 0, 9306158, 7, 0, 9306162, 7, 0, 9306166, 7, 0, 9306170, 7, 0, 9306174, 7, 0, 9306178, 7, 0, 9306182, 7, 0, 9306186, 7, 0, 9306190, 7, 0, 9306194, 7, 0, 9306197, 7, 0, 9306201, 7, 0, 9306205, 7, 0, 9306209, 7, 0, 9306213, 7, 0, 9306217, 7, 0, 9306221, 7, 0, 9306225, 7, 0, 9306229, 7, 0, 9306233, 7, 0, 9306237, 7, 0, 9306241, 7, 0, 9306245, 7, 0, 9306249, 7, 0, 9306253, 7, 0, 9306257, 7, 0, 9306261, 7, 0, 9306265, 7, 0, 9306268, 7, 0, 9306272, 7, 0, 9306276, 7, 0, 9306280, 7, 0, 9306284, 7, 0, 9306288, 7, 0, 9306292, 7, 0, 9306296, 7, 0, 9306297, 7, 0 )
+tile_data = PoolIntArray( 5047157, 0, 0, 5112693, 0, 0, 5178229, 0, 0, 5243765, 0, 0, 5309301, 0, 0, 5374837, 0, 0, 5440373, 0, 0, 5505909, 0, 0, 5571445, 0, 0, 5636981, 0, 0, 5702517, 0, 0, 5832701, 0, 0, 5768053, 0, 0, 5898237, 0, 0, 5833589, 0, 0, 5963773, 0, 0, 5899125, 0, 0, 6029309, 0, 0, 5964661, 0, 0, 6094845, 0, 0, 6030197, 0, 0, 6160381, 0, 0, 6095733, 0, 0, 6225917, 0, 0, 6161269, 0, 0, 6291453, 0, 0, 6226805, 0, 0, 6356989, 0, 0, 6292341, 0, 0, 6422525, 0, 0, 6357877, 0, 0, 6488061, 0, 0, 6423413, 0, 0, 6553597, 0, 0, 6488949, 0, 0, 6619133, 0, 0, 6554485, 0, 0, 6684669, 0, 0, 6620021, 0, 0, 6750205, 0, 0, 6685557, 0, 0, 6815741, 0, 0, 6751093, 0, 0, 6881277, 0, 0, 6816629, 0, 0, 6946813, 0, 0, 6882165, 0, 0, 7012349, 0, 0, 6947701, 0, 0, 7077885, 0, 0, 7013237, 0, 0, 7143421, 0, 0, 7078773, 0, 0, 7208957, 0, 0, 7144309, 0, 0, 7274493, 0, 0, 7209845, 0, 0, 7340029, 0, 0, 7275381, 0, 0, 7405565, 0, 0, 7340917, 0, 0, 7471101, 0, 0, 7406453, 0, 0, 7536637, 0, 0, 7471989, 0, 0, 7602173, 0, 0, 7537525, 0, 0, 7667709, 0, 0, 7603061, 0, 0, 7733245, 0, 0, 7668597, 0, 0, 7798781, 0, 0, 7734133, 0, 0, 7864317, 0, 0, 7799669, 0, 0, 7929853, 0, 0, 7865205, 0, 0, 7995389, 0, 0, 7930741, 0, 0, 8060925, 0, 0, 7996277, 0, 0, 8126461, 0, 0, 8061813, 0, 0, 8191997, 0, 0, 8127349, 0, 0, 8257533, 0, 0, 8192885, 0, 0, 8323069, 0, 0, 8258421, 0, 0, 8388605, 0, 0, 8323957, 0, 0, 8454141, 0, 0, 8389493, 0, 0, 8519677, 0, 0, 8455029, 0, 0, 8585213, 0, 0, 8520565, 0, 0, 8650749, 0, 0, 8586101, 0, 0, 8716285, 0, 0, 8651637, 0, 0, 8781821, 0, 0, 8717173, 0, 0, 8847357, 0, 0, 8782709, 0, 0, 8912893, 0, 0, 8848245, 0, 0, 8978429, 0, 0, 8913781, 0, 0, 8979317, 0, 0, 9109501, 0, 0, 9044853, 0, 0, 9175037, 0, 0, 9110389, 0, 0, 9240573, 0, 0, 9175925, 0, 0, 9306109, 0, 0, 9241461, 0, 0, 9371645, 0, 0, 9306112, 7, 0, 9306116, 7, 0, 9306120, 7, 0, 9306124, 7, 0, 9306127, 7, 0, 9306130, 7, 0, 9306132, 7, 0, 9306135, 7, 0, 9306139, 7, 0, 9306143, 7, 0, 9306147, 7, 0, 9306151, 7, 0, 9306154, 7, 0, 9306158, 7, 0, 9306162, 7, 0, 9306166, 7, 0, 9306170, 7, 0, 9306174, 7, 0, 9306178, 7, 0, 9306182, 7, 0, 9306186, 7, 0, 9306190, 7, 0, 9306194, 7, 0, 9306197, 7, 0, 9306201, 7, 0, 9306205, 7, 0, 9306209, 7, 0, 9306213, 7, 0, 9306217, 7, 0, 9306221, 7, 0, 9306225, 7, 0, 9306229, 7, 0, 9306233, 7, 0, 9306237, 7, 0, 9306241, 7, 0, 9306245, 7, 0, 9306249, 7, 0, 9306253, 7, 0, 9306257, 7, 0, 9306261, 7, 0, 9306265, 7, 0, 9306268, 7, 0, 9306272, 7, 0, 9306276, 7, 0, 9306280, 7, 0, 9306284, 7, 0, 9306288, 7, 0, 9306292, 7, 0, 9306296, 7, 0, 9306297, 7, 0, 9306997, 0, 0, 9437181, 0, 0, 9372533, 0, 0, 9502717, 0, 0, 9568253, 0, 0, 9633789, 0, 0, 9699325, 0, 0 )
 
 [node name="Floresta" type="TileMap" parent="Cenario/Tilemap"]
 tile_set = ExtResource( 3 )
@@ -51,8 +63,10 @@ format = 1
 tile_data = PoolIntArray( 6488152, 0, 0 )
 
 [node name="Props" type="Node2D" parent="Cenario"]
+editor/display_folded = true
 
 [node name="Tilemaps" type="Node2D" parent="Cenario/Props"]
+editor/display_folded = true
 
 [node name="Props_cidade" type="TileMap" parent="Cenario/Props/Tilemaps"]
 tile_set = ExtResource( 6 )
@@ -62,3 +76,110 @@ format = 1
 tile_data = PoolIntArray( 7733268, 3, 0, 7733369, 3, 0, 7733422, 3, 0 )
 
 [node name="Background_cemiterio" parent="Cenario" instance=ExtResource( 7 )]
+position = Vector2( 108.837, 0 )
+
+[node name="Inimigos" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Bat2" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 1256, 464.001 )
+
+[node name="Bat3" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 1632.31, 485.993 )
+
+[node name="Bat4" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 1973.58, 419.203 )
+
+[node name="Bat5" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 2414.23, 477.033 )
+
+[node name="Bat6" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 2848.37, 381.736 )
+
+[node name="Bat7" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 3051.18, 473.775 )
+
+[node name="Bat8" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 3242.59, 428.977 )
+
+[node name="Bat9" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 3489.38, 499.839 )
+
+[node name="Bat10" parent="Inimigos" instance=ExtResource( 8 )]
+position = Vector2( 3502.42, 412.687 )
+
+[node name="GhostBlue" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 1164.24, 544.927 )
+
+[node name="GhostBlue2" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 1626.1, 547.771 )
+
+[node name="GhostBlue3" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 1872.96, 546.065 )
+
+[node name="GhostBlue4" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 2466.79, 544.358 )
+
+[node name="GhostBlue5" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 2882.59, 478.946 )
+
+[node name="GhostBlue6" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 3127.17, 543.221 )
+
+[node name="GhostBlue7" parent="Inimigos" instance=ExtResource( 9 )]
+position = Vector2( 3353.55, 543.221 )
+
+[node name="GhostHead" parent="Inimigos" instance=ExtResource( 10 )]
+position = Vector2( 984.268, 533.288 )
+
+[node name="GhostHead2" parent="Inimigos" instance=ExtResource( 10 )]
+position = Vector2( 1690.49, 440.976 )
+
+[node name="GhostHead4" parent="Inimigos" instance=ExtResource( 10 )]
+position = Vector2( 2053.62, 494.05 )
+
+[node name="GhostHead5" parent="Inimigos" instance=ExtResource( 10 )]
+position = Vector2( 2338.55, 551.314 )
+
+[node name="GhostHead6" parent="Inimigos" instance=ExtResource( 10 )]
+position = Vector2( 2776.26, 494.456 )
+
+[node name="GhostHead3" parent="Inimigos" instance=ExtResource( 10 )]
+position = Vector2( 1753.34, 540.14 )
+
+[node name="Hand" parent="Inimigos" instance=ExtResource( 11 )]
+position = Vector2( 261.969, 583.523 )
+
+[node name="Hand2" parent="Inimigos" instance=ExtResource( 11 )]
+position = Vector2( 212.792, 585.367 )
+
+[node name="Hand3" parent="Inimigos" instance=ExtResource( 11 )]
+position = Vector2( 140.87, 585.367 )
+
+[node name="HellCat" parent="Inimigos" instance=ExtResource( 12 )]
+position = Vector2( 1397.23, 544.045 )
+
+[node name="HellCat2" parent="Inimigos" instance=ExtResource( 12 )]
+position = Vector2( 2164.83, 549.41 )
+
+[node name="HellCat3" parent="Inimigos" instance=ExtResource( 12 )]
+position = Vector2( 3049.97, 547.947 )
+
+[node name="Spider" parent="Inimigos" instance=ExtResource( 13 )]
+position = Vector2( 314.654, 574.741 )
+
+[node name="Spider2" parent="Inimigos" instance=ExtResource( 13 )]
+position = Vector2( 681.18, 571.661 )
+
+[node name="Portal" type="Node2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="Portal"]
+script = ExtResource( 14 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal/Area2D"]
+position = Vector2( 3538.1, 473.436 )
+shape = SubResource( 1 )
+[connection signal="body_entered" from="Portal/Area2D" to="Portal/Area2D" method="_on_Area2D_body_entered"]
