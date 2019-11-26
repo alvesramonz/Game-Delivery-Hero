@@ -1,35 +1,150 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=82 format=2]
 
-[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Tilemap/Tile_cidade.tres" type="TileSet" id=2]
-[ext_resource path="res://Tilemap/Tile_casas_cidade.tres" type="TileSet" id=3]
-[ext_resource path="res://Tilemap/Props/Tile_props_cidade.tres" type="TileSet" id=4]
-[ext_resource path="res://Scenes/Extras/Background_cidade_noite.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Enemies/Bat2.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Enemies/GhostHead.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Enemies/GhostBlue.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Enemies/HellCat.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Enemies/Mage.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Enemies/Skeleton1.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Scripts/Portais/Portal8-10.gd" type="Script" id=12]
-[ext_resource path="res://Scripts/Portais/Portal8-9.gd" type="Script" id=13]
+[ext_resource path="res://Scripts/Scenes/Scene 8-0.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Tilemap/Tile_cidade.tres" type="TileSet" id=3]
+[ext_resource path="res://Tilemap/Tile_casas_cidade.tres" type="TileSet" id=4]
+[ext_resource path="res://Tilemap/Props/Tile_props_cidade.tres" type="TileSet" id=5]
+[ext_resource path="res://Scenes/Extras/Background_cidade_noite.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Enemies/Bat2.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Enemies/Bat3.gd" type="Script" id=8]
+[ext_resource path="res://Enemies/Bat2.gd" type="Script" id=9]
+[ext_resource path="res://Enemies/Bat4.gd" type="Script" id=10]
+[ext_resource path="res://Enemies/GhostHead.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Enemies/GhostHead5.gd" type="Script" id=12]
+[ext_resource path="res://Enemies/GhostHead4.gd" type="Script" id=13]
+[ext_resource path="res://Enemies/GhostHead2.gd" type="Script" id=14]
+[ext_resource path="res://Enemies/GhostHead1.gd" type="Script" id=15]
+[ext_resource path="res://Enemies/GhostHead3.gd" type="Script" id=16]
+[ext_resource path="res://Enemies/GhostBlue.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Enemies/HellCat.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Enemies/HellCat1.gd" type="Script" id=19]
+[ext_resource path="res://Enemies/HellCat.gd" type="Script" id=20]
+[ext_resource path="res://Enemies/Mage.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Enemies/Skeleton1.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Enemies/Skeleton1.gd" type="Script" id=23]
+[ext_resource path="res://Enemies/Skeleton5.gd" type="Script" id=24]
+[ext_resource path="res://Enemies/Skeleton.gd" type="Script" id=25]
+[ext_resource path="res://Scripts/Portais/Portal8-10.gd" type="Script" id=26]
+[ext_resource path="res://Scripts/Portais/Portal8-9.gd" type="Script" id=27]
+[ext_resource path="res://Scripts/Player/KinematicBody2D.gd" type="Script" id=28]
+[ext_resource path="res://Assets/Player - Cavaleiro/Run/1.png" type="Texture" id=29]
+[ext_resource path="res://Assets/Player - Cavaleiro/Run/2.png" type="Texture" id=30]
+[ext_resource path="res://Assets/Player - Cavaleiro/Run/3.png" type="Texture" id=31]
+[ext_resource path="res://Assets/Player - Cavaleiro/Run/4.png" type="Texture" id=32]
+[ext_resource path="res://Assets/Player - Cavaleiro/Run/5.png" type="Texture" id=33]
+[ext_resource path="res://Assets/Player - Cavaleiro/Run/6.png" type="Texture" id=34]
+[ext_resource path="res://Assets/Player - Cavaleiro/Run/7.png" type="Texture" id=35]
+[ext_resource path="res://Assets/Player - Cavaleiro/Run/8.png" type="Texture" id=36]
+[ext_resource path="res://Assets/Player - Cavaleiro/Run/9.png" type="Texture" id=37]
+[ext_resource path="res://Assets/Player - Cavaleiro/Run/10.png" type="Texture" id=38]
+[ext_resource path="res://Assets/Player - Cavaleiro/Run/11.png" type="Texture" id=39]
+[ext_resource path="res://Assets/Player - Cavaleiro/climb/gothic-hero-crouch-slash_0000_Layer-1.png" type="Texture" id=40]
+[ext_resource path="res://Assets/Player - Cavaleiro/climb/gothic-hero-crouch-slash_0001_Layer-2.png" type="Texture" id=41]
+[ext_resource path="res://Assets/Player - Cavaleiro/climb/gothic-hero-crouch-slash_0002_Layer-3.png" type="Texture" id=42]
+[ext_resource path="res://Assets/Player - Cavaleiro/climb/gothic-hero-crouch-slash_0003_Layer-4.png" type="Texture" id=43]
+[ext_resource path="res://Assets/Player - Cavaleiro/climb/gothic-hero-crouch-slash_0004_Layer-5.png" type="Texture" id=44]
+[ext_resource path="res://Assets/Player - Cavaleiro/climb/gothic-hero-crouch-slash_0005_Layer-6.png" type="Texture" id=45]
+[ext_resource path="res://Assets/Player - Cavaleiro/climb/gothic-hero-crouch-slash_0006_Layer-7.png" type="Texture" id=46]
+[ext_resource path="res://Assets/Player - Cavaleiro/hurt/gothic-hero-crouch-slash_0000_Layer-1.png" type="Texture" id=47]
+[ext_resource path="res://Assets/Player - Cavaleiro/hurt/gothic-hero-crouch-slash_0001_Layer-2.png" type="Texture" id=48]
+[ext_resource path="res://Assets/Player - Cavaleiro/hurt/gothic-hero-crouch-slash_0002_Layer-3.png" type="Texture" id=49]
+[ext_resource path="res://Assets/Player - Cavaleiro/crouch/gothic-hero-crouch-slash_0001_Layer-2.png" type="Texture" id=50]
+[ext_resource path="res://Assets/Player - Cavaleiro/crouch/gothic-hero-crouch-slash_0002_Layer-3.png" type="Texture" id=51]
+[ext_resource path="res://Assets/Player - Cavaleiro/Jump/0.png" type="Texture" id=52]
+[ext_resource path="res://Assets/Player - Cavaleiro/Jump/1.png" type="Texture" id=53]
+[ext_resource path="res://Assets/Player - Cavaleiro/Jump/2.png" type="Texture" id=54]
+[ext_resource path="res://Assets/Player - Cavaleiro/Jump/3.png" type="Texture" id=55]
+[ext_resource path="res://Assets/Player - Cavaleiro/Jump/4.png" type="Texture" id=56]
+[ext_resource path="res://Assets/Player - Cavaleiro/Idle/0.png" type="Texture" id=57]
+[ext_resource path="res://Assets/Player - Cavaleiro/Idle/1.png" type="Texture" id=58]
+[ext_resource path="res://Assets/Player - Cavaleiro/Idle/2.png" type="Texture" id=59]
+[ext_resource path="res://Assets/Player - Cavaleiro/Idle/3.png" type="Texture" id=60]
+[ext_resource path="res://Assets/Player - Cavaleiro/Atack/0.png" type="Texture" id=61]
+[ext_resource path="res://Assets/Player - Cavaleiro/Atack/1.png" type="Texture" id=62]
+[ext_resource path="res://Assets/Player - Cavaleiro/Atack/2.png" type="Texture" id=63]
+[ext_resource path="res://Assets/Player - Cavaleiro/Atack/3.png" type="Texture" id=64]
+[ext_resource path="res://Assets/Player - Cavaleiro/Atack/4.png" type="Texture" id=65]
+[ext_resource path="res://Assets/Player - Cavaleiro/Atack/5.png" type="Texture" id=66]
+[ext_resource path="res://Assets/Player - Cavaleiro/jump-attack/gothic-hero-crouch-slash_0000_Layer-1.png" type="Texture" id=67]
+[ext_resource path="res://Assets/Player - Cavaleiro/jump-attack/gothic-hero-crouch-slash_0001_Layer-2.png" type="Texture" id=68]
+[ext_resource path="res://Assets/Player - Cavaleiro/jump-attack/gothic-hero-crouch-slash_0002_Layer-3.png" type="Texture" id=69]
+[ext_resource path="res://Assets/Player - Cavaleiro/jump-attack/gothic-hero-crouch-slash_0003_Layer-4.png" type="Texture" id=70]
+[ext_resource path="res://Assets/Player - Cavaleiro/jump-attack/gothic-hero-crouch-slash_0004_Layer-5.png" type="Texture" id=71]
+[ext_resource path="res://Assets/Player - Cavaleiro/jump-attack/gothic-hero-crouch-slash_0005_Layer-6.png" type="Texture" id=72]
+[ext_resource path="res://Food/Pao.tscn" type="PackedScene" id=73]
+[ext_resource path="res://Food/Porco.tscn" type="PackedScene" id=74]
+[ext_resource path="res://Food/Cerveja.tscn" type="PackedScene" id=75]
+[ext_resource path="res://Food/Biscoito.tscn" type="PackedScene" id=76]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 13.9907, 24.944 )
+extents = Vector2( 1.06274, 90.5268 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 10, 24.7904 )
 
-[node name="Scene 8-0" type="Node2D"]
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ) ],
+"loop": true,
+"name": "Run",
+"speed": 7.5
+}, {
+"frames": [ ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ) ],
+"loop": true,
+"name": "Climb",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ) ],
+"loop": true,
+"name": "Hurt",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 50 ), ExtResource( 51 ) ],
+"loop": true,
+"name": "Crouch",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ) ],
+"loop": true,
+"name": "Jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ) ],
+"loop": true,
+"name": "Atack",
+"speed": 7.5
+}, {
+"frames": [ ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ) ],
+"loop": true,
+"name": "JumpAtack",
+"speed": 5.0
+} ]
 
-[node name="HUD" parent="." instance=ExtResource( 1 )]
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 7.39084
+height = 17.1491
+
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 8.21486
+height = 16.4321
+
+[node name="Scene 8-0" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="HUD" parent="." instance=ExtResource( 2 )]
 
 [node name="Cenario" type="Node2D" parent="."]
 
 [node name="Tilemap" type="Node2D" parent="Cenario"]
 
 [node name="Cidade" type="TileMap" parent="Cenario/Tilemap"]
-tile_set = ExtResource( 2 )
+tile_set = ExtResource( 3 )
 cell_size = Vector2( 4, 4 )
 cell_quadrant_size = 4
 format = 1
@@ -37,7 +152,7 @@ tile_data = PoolIntArray( 262819, 9, 0, 262835, 14, 0, 262839, 14, 0, 262843, 14
 
 [node name="Cidade2" type="TileMap" parent="Cenario/Tilemap"]
 z_index = -1
-tile_set = ExtResource( 2 )
+tile_set = ExtResource( 3 )
 cell_size = Vector2( 4, 4 )
 cell_quadrant_size = 4
 format = 1
@@ -45,13 +160,13 @@ tile_data = PoolIntArray( 262819, 9, 0, 262835, 14, 0, 262839, 14, 0, 262843, 14
 
 [node name="Cidade3" type="TileMap" parent="Cenario/Tilemap"]
 z_index = 1
-tile_set = ExtResource( 2 )
+tile_set = ExtResource( 3 )
 cell_size = Vector2( 4, 4 )
 format = 1
 tile_data = PoolIntArray( 0, 6685368, 0, 13, 0, 0, 15, 0, 0, 26, 0, 0, 5440238, 26, 0, 5440252, 26, 0, 5571310, 26, 0, 5571324, 26, 0, 5702381, 10, 0, 6685364, 10, 0, 6685368, 15, 0 )
 
 [node name="Casas" type="TileMap" parent="Cenario/Tilemap"]
-tile_set = ExtResource( 3 )
+tile_set = ExtResource( 4 )
 cell_size = Vector2( 4, 4 )
 cell_quadrant_size = 4
 format = 1
@@ -64,149 +179,167 @@ editor/display_folded = true
 
 [node name="Props_cidade" type="TileMap" parent="Cenario/Props/Tilemaps"]
 z_index = 1
-tile_set = ExtResource( 4 )
+tile_set = ExtResource( 5 )
 cell_size = Vector2( 4, 4 )
 cell_quadrant_size = 4
 format = 1
 tile_data = PoolIntArray( 5374702, 0, 0, 6357682, 0, 0, 7733264, 3, 0, 7733304, 3, 0, 7733362, 3, 0, 7733453, 3, 0, 7733638, 3, 0, 7733687, 3, 0, 7733730, 3, 0, 7733778, 3, 0, 7733836, 3, 0, 7733869, 3, 0, 7733938, 3, 0, 7733997, 3, 0, 7734083, 3, 0, 7734125, 3, 0, 7799033, 3, 0, 7799104, 3, 0, 7799136, 3, 0, 7929954, 2, 0, 7930355, 2, 0, 8257764, 2, 0, 8323213, 4, 0, 8323342, 2, 0, 8323650, 2, 0, 8323665, 4, 0, 8388645, 2, 0, 8388735, 2, 0, 8388975, 2, 0, 8389364, 4, 0, 8454314, 5, 0, 8454555, 5, 0, 8454688, 5, 0, 8454930, 5, 0, 8913176, 1, 0, 8913270, 1, 0, 8913580, 1, 0, 8978435, 1, 0, 8979059, 1, 0, 8979164, 0, 0, 8979170, 0, 0, 8979176, 0, 0, 9044064, 0, 0, 9044070, 0, 0, 9044194, 0, 0, 9044427, 0, 0, 9044528, 0, 0, 9044533, 0, 0, 9044855, 0, 0 )
 
-[node name="Background_cidade_noite" parent="Cenario" instance=ExtResource( 5 )]
+[node name="Background_cidade_noite" parent="Cenario" instance=ExtResource( 6 )]
+position = Vector2( 0, 2.02423 )
 
 [node name="Inimigos" type="Node2D" parent="."]
+editor/display_folded = true
 
-[node name="Bat2" parent="Inimigos" instance=ExtResource( 6 )]
-position = Vector2( 92.8787, 360.9 )
+[node name="Bat2" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( -98.1856, 408.666 )
+script = ExtResource( 8 )
 
-[node name="Bat3" parent="Inimigos" instance=ExtResource( 6 )]
+[node name="Bat3" parent="Inimigos" instance=ExtResource( 7 )]
 position = Vector2( 2080.65, 253.789 )
+script = ExtResource( 8 )
 
-[node name="Bat4" parent="Inimigos" instance=ExtResource( 6 )]
-position = Vector2( 840.129, 370.972 )
+[node name="Bat4" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 693.339, 376.336 )
+script = ExtResource( 9 )
 
-[node name="Bat5" parent="Inimigos" instance=ExtResource( 6 )]
-position = Vector2( 3399.87, 281.049 )
+[node name="Bat5" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 3185.48, 306.887 )
+script = ExtResource( 10 )
 
-[node name="Bat6" parent="Inimigos" instance=ExtResource( 6 )]
-position = Vector2( 1579.66, 345.099 )
+[node name="Bat6" parent="Inimigos" instance=ExtResource( 7 )]
+position = Vector2( 1414.32, 320.664 )
+script = ExtResource( 10 )
 
-[node name="Bat7" parent="Inimigos" instance=ExtResource( 6 )]
+[node name="Bat7" parent="Inimigos" instance=ExtResource( 7 )]
 position = Vector2( 2173.36, 386.11 )
+script = ExtResource( 9 )
 
-[node name="GhostHead" parent="Inimigos" instance=ExtResource( 7 )]
-position = Vector2( 1027.42, 444.569 )
+[node name="GhostHead" parent="Inimigos" instance=ExtResource( 11 )]
+position = Vector2( 999.277, 492.849 )
+script = ExtResource( 12 )
 
-[node name="GhostHead2" parent="Inimigos" instance=ExtResource( 7 )]
+[node name="GhostHead2" parent="Inimigos" instance=ExtResource( 11 )]
 position = Vector2( 1420.3, 515.649 )
+script = ExtResource( 13 )
 
-[node name="GhostHead3" parent="Inimigos" instance=ExtResource( 7 )]
+[node name="GhostHead3" parent="Inimigos" instance=ExtResource( 11 )]
 position = Vector2( 1787.32, 372.198 )
+script = ExtResource( 14 )
 
-[node name="GhostHead4" parent="Inimigos" instance=ExtResource( 7 )]
+[node name="GhostHead4" parent="Inimigos" instance=ExtResource( 11 )]
 position = Vector2( 3002.98, 255.274 )
+script = ExtResource( 14 )
 
-[node name="GhostHead5" parent="Inimigos" instance=ExtResource( 7 )]
-position = Vector2( 3067.42, 402.767 )
+[node name="GhostHead5" parent="Inimigos" instance=ExtResource( 11 )]
+position = Vector2( 3159.41, 381.443 )
+script = ExtResource( 15 )
 
-[node name="GhostHead6" parent="Inimigos" instance=ExtResource( 7 )]
+[node name="GhostHead10" parent="Inimigos" instance=ExtResource( 11 )]
+position = Vector2( 2822.42, 424.358 )
+script = ExtResource( 15 )
+
+[node name="GhostHead6" parent="Inimigos" instance=ExtResource( 11 )]
 position = Vector2( 2750.96, 455.75 )
+script = ExtResource( 16 )
 
-[node name="GhostHead7" parent="Inimigos" instance=ExtResource( 7 )]
+[node name="GhostHead7" parent="Inimigos" instance=ExtResource( 11 )]
 position = Vector2( 2467.42, 494.413 )
+script = ExtResource( 13 )
 
-[node name="GhostHead8" parent="Inimigos" instance=ExtResource( 7 )]
-position = Vector2( 663.142, 432.838 )
+[node name="GhostHead8" parent="Inimigos" instance=ExtResource( 11 )]
+position = Vector2( 451.492, 467.95 )
+script = ExtResource( 13 )
 
-[node name="GhostHead9" parent="Inimigos" instance=ExtResource( 7 )]
-position = Vector2( 769.108, 497.277 )
+[node name="GhostHead9" parent="Inimigos" instance=ExtResource( 11 )]
+position = Vector2( 753.015, 499.228 )
+script = ExtResource( 16 )
 
-[node name="GhostBlue" parent="Inimigos" instance=ExtResource( 8 )]
-position = Vector2( 715.803, 431.467 )
+[node name="GhostBlue2" parent="Inimigos" instance=ExtResource( 17 )]
+position = Vector2( 1478.04, 310.152 )
 
-[node name="GhostBlue2" parent="Inimigos" instance=ExtResource( 8 )]
-position = Vector2( 1463.52, 314.993 )
-
-[node name="GhostBlue3" parent="Inimigos" instance=ExtResource( 8 )]
+[node name="GhostBlue3" parent="Inimigos" instance=ExtResource( 17 )]
 position = Vector2( 1953.04, 376.081 )
 
-[node name="GhostBlue4" parent="Inimigos" instance=ExtResource( 8 )]
-position = Vector2( 3065.03, 397.081 )
+[node name="GhostBlue4" parent="Inimigos" instance=ExtResource( 17 )]
+position = Vector2( 3066.7, 395.409 )
 
-[node name="HellCat" parent="Inimigos" instance=ExtResource( 9 )]
-position = Vector2( 464.976, 557.797 )
+[node name="HellCat" parent="Inimigos" instance=ExtResource( 18 )]
+position = Vector2( 468.497, 555.156 )
+script = ExtResource( 19 )
 
-[node name="HellCat2" parent="Inimigos" instance=ExtResource( 9 )]
-position = Vector2( 971.028, 556.249 )
-
-[node name="HellCat3" parent="Inimigos" instance=ExtResource( 9 )]
-position = Vector2( 1343.37, 556.689 )
-
-[node name="HellCat4" parent="Inimigos" instance=ExtResource( 9 )]
+[node name="HellCat4" parent="Inimigos" instance=ExtResource( 18 )]
 position = Vector2( 1611.85, 556.12 )
+script = ExtResource( 20 )
 
-[node name="HellCat5" parent="Inimigos" instance=ExtResource( 9 )]
-position = Vector2( 2585.63, 554.414 )
-
-[node name="HellCat6" parent="Inimigos" instance=ExtResource( 9 )]
+[node name="HellCat6" parent="Inimigos" instance=ExtResource( 18 )]
 position = Vector2( 3253.94, 553.017 )
+script = ExtResource( 20 )
 
-[node name="Mage" parent="Inimigos" instance=ExtResource( 10 )]
+[node name="Mage" parent="Inimigos" instance=ExtResource( 21 )]
 position = Vector2( 879.83, 545.662 )
 
-[node name="Mage2" parent="Inimigos" instance=ExtResource( 10 )]
+[node name="Mage2" parent="Inimigos" instance=ExtResource( 21 )]
 position = Vector2( 2364.4, 304.491 )
 
-[node name="Mage5" parent="Inimigos" instance=ExtResource( 10 )]
+[node name="Mage5" parent="Inimigos" instance=ExtResource( 21 )]
 position = Vector2( 2906.46, 544.524 )
 
-[node name="Mage6" parent="Inimigos" instance=ExtResource( 10 )]
+[node name="Mage6" parent="Inimigos" instance=ExtResource( 21 )]
 position = Vector2( 3463.54, 365.353 )
 
-[node name="Mage3" parent="Inimigos" instance=ExtResource( 10 )]
+[node name="Mage3" parent="Inimigos" instance=ExtResource( 21 )]
 position = Vector2( 1024.3, 365.353 )
 
-[node name="Mage4" parent="Inimigos" instance=ExtResource( 10 )]
+[node name="Mage4" parent="Inimigos" instance=ExtResource( 21 )]
 position = Vector2( 2012.88, 546.8 )
 
-[node name="Skeleton1" parent="Inimigos" instance=ExtResource( 11 )]
-position = Vector2( 209.358, 554.172 )
+[node name="Skeleton1" parent="Inimigos" instance=ExtResource( 22 )]
+position = Vector2( 113.231, 553.034 )
+script = ExtResource( 23 )
 
-[node name="Skeleton2" parent="Inimigos" instance=ExtResource( 11 )]
-position = Vector2( 495.491, 315.308 )
+[node name="Skeleton2" parent="Inimigos" instance=ExtResource( 22 )]
+position = Vector2( 444.299, 315.308 )
+script = ExtResource( 24 )
 
-[node name="Skeleton3" parent="Inimigos" instance=ExtResource( 11 )]
-position = Vector2( 1192.55, 553.542 )
+[node name="Skeleton3" parent="Inimigos" instance=ExtResource( 22 )]
+position = Vector2( 1175.11, 554.03 )
+script = ExtResource( 24 )
 
-[node name="Skeleton4" parent="Inimigos" instance=ExtResource( 11 )]
-position = Vector2( 1377.55, 554.739 )
+[node name="Skeleton4" parent="Inimigos" instance=ExtResource( 22 )]
+position = Vector2( 1334.86, 554.299 )
+script = ExtResource( 24 )
 
-[node name="Skeleton5" parent="Inimigos" instance=ExtResource( 11 )]
-position = Vector2( 1718.24, 552.344 )
+[node name="Skeleton5" parent="Inimigos" instance=ExtResource( 22 )]
+position = Vector2( 1552.6, 554.33 )
+script = ExtResource( 23 )
 
-[node name="Skeleton6" parent="Inimigos" instance=ExtResource( 11 )]
-position = Vector2( 1879.89, 554.14 )
+[node name="Skeleton6" parent="Inimigos" instance=ExtResource( 22 )]
+position = Vector2( 1916.85, 554.653 )
+script = ExtResource( 25 )
 
-[node name="Skeleton7" parent="Inimigos" instance=ExtResource( 11 )]
+[node name="Skeleton7" parent="Inimigos" instance=ExtResource( 22 )]
 position = Vector2( 2297.21, 551.147 )
-
-[node name="Skeleton8" parent="Inimigos" instance=ExtResource( 11 )]
-position = Vector2( 2879.78, 443.973 )
+script = ExtResource( 25 )
 
 [node name="Portal" type="Node2D" parent="."]
 
 [node name="Area2D" type="Area2D" parent="Portal"]
-script = ExtResource( 12 )
+position = Vector2( 0.307129, -4.60651 )
+script = ExtResource( 26 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal/Area2D"]
-position = Vector2( 3484.54, 552.283 )
+position = Vector2( 3577.75, 489.19 )
 shape = SubResource( 1 )
 
 [node name="Portal2" type="Node2D" parent="."]
+editor/display_folded = true
 
 [node name="Area2D" type="Area2D" parent="Portal2"]
-script = ExtResource( 13 )
+script = ExtResource( 27 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -214,5 +347,93 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal2/Area2D"]
 position = Vector2( 2799.42, 187.303 )
 shape = SubResource( 2 )
+
+[node name="Personagem" type="Node2D" parent="."]
+editor/display_folded = true
+position = Vector2( 52.2757, 543.183 )
+
+[node name="PlayerCavaleiro" type="KinematicBody2D" parent="Personagem"]
+position = Vector2( 7.92694, 19.986 )
+script = ExtResource( 28 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Personagem/PlayerCavaleiro"]
+position = Vector2( 1.67189, 0.0823212 )
+scale = Vector2( 0.984569, 0.973854 )
+frames = SubResource( 3 )
+animation = "Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personagem/PlayerCavaleiro"]
+position = Vector2( 1.43176, 1.01833 )
+shape = SubResource( 4 )
+
+[node name="Camera2D" type="Camera2D" parent="Personagem/PlayerCavaleiro"]
+position = Vector2( 163.22, 768.699 )
+current = true
+zoom = Vector2( 0.8, 0.8 )
+limit_left = 5
+limit_top = 0
+limit_right = 3580
+limit_bottom = 600
+editor_draw_limits = true
+
+[node name="DamageBox" type="Area2D" parent="Personagem/PlayerCavaleiro"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personagem/PlayerCavaleiro/DamageBox"]
+position = Vector2( 1.41702, 1.03912 )
+shape = SubResource( 5 )
+
+[node name="Food" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Pao" parent="Food" instance=ExtResource( 73 )]
+position = Vector2( 34.7667, 543.677 )
+rotation = -0.758536
+
+[node name="Pao2" parent="Food" instance=ExtResource( 73 )]
+position = Vector2( 577.278, 575.008 )
+rotation = -0.78506
+
+[node name="Pao3" parent="Food" instance=ExtResource( 73 )]
+position = Vector2( 929.864, 574.033 )
+rotation = -0.78506
+
+[node name="Pao4" parent="Food" instance=ExtResource( 73 )]
+position = Vector2( 1144.25, 539.116 )
+rotation = -0.78506
+
+[node name="Pao5" parent="Food" instance=ExtResource( 73 )]
+position = Vector2( 1599.74, 472.305 )
+rotation = -0.78506
+
+[node name="Pao6" parent="Food" instance=ExtResource( 73 )]
+position = Vector2( 1991.34, 408.908 )
+rotation = -0.78506
+
+[node name="Pao7" parent="Food" instance=ExtResource( 73 )]
+position = Vector2( 2283.94, 572.278 )
+rotation = -0.78506
+
+[node name="Pao8" parent="Food" instance=ExtResource( 73 )]
+position = Vector2( 3072.31, 568.241 )
+rotation = -0.78506
+
+[node name="Porco" parent="Food" instance=ExtResource( 74 )]
+position = Vector2( 2958.65, 382.852 )
+
+[node name="Porco2" parent="Food" instance=ExtResource( 74 )]
+position = Vector2( 3542.89, 435.162 )
+
+[node name="Cerveja" parent="Food" instance=ExtResource( 75 )]
+position = Vector2( 417.804, 544.724 )
+
+[node name="Cerveja2" parent="Food" instance=ExtResource( 75 )]
+position = Vector2( 747.881, 453.349 )
+
+[node name="Cerveja3" parent="Food" instance=ExtResource( 75 )]
+position = Vector2( 1752.51, 420.308 )
+
+[node name="Biscoito" parent="Food" instance=ExtResource( 76 )]
+position = Vector2( 3089.14, 516.663 )
 [connection signal="body_entered" from="Portal/Area2D" to="Portal/Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Portal2/Area2D" to="Portal2/Area2D" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Personagem/PlayerCavaleiro/DamageBox" to="Personagem/PlayerCavaleiro" method="_on_DamageBox_body_entered"]

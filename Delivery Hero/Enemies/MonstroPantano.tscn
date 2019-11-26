@@ -15,22 +15,21 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 16.4593
-height = 38.055
+radius = 8.55007
+height = 24.7593
 
 [node name="MonstroPantano" type="StaticBody2D"]
+position = Vector2( 4.45537, -1.35598 )
+collision_layer = 16
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 14.3564, 19.537 )
-scale = Vector2( 1.87008, 1.86831 )
+position = Vector2( 5.05418, 33.8963 )
+scale = Vector2( 1.30631, 1.23012 )
 frames = SubResource( 1 )
 animation = "Run"
 frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 15.3031, 29.6378 )
+position = Vector2( 6.7784, 40.3661 )
 shape = SubResource( 2 )

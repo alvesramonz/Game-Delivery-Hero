@@ -1,0 +1,29 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/oldman-idle/oldman-idle-1.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/oldman-idle/oldman-idle-2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/oldman-idle/oldman-idle-3.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/oldman-idle/oldman-idle-4.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/oldman-idle/oldman-idle-5.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/oldman-idle/oldman-idle-6.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/oldman-idle/oldman-idle-7.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/oldman-idle/oldman-idle-8.png" type="Texture" id=8]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 7.0
+} ]
+
+[node name="Velho" type="Node2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 3.92412, -4.63759 )
+scale = Vector2( 1.23083, 1.22084 )
+frames = SubResource( 1 )
+animation = "Idle"
+frame = 6
+playing = true
+flip_h = true

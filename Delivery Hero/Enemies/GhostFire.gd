@@ -6,7 +6,7 @@ var posicaoFinal
 var velocidade = 1
 
 func _ready():
-	$AnimatedSprite.play("Walk")
+	$AnimatedSprite.play("Run")
 	posicaoInicial = $".".position.x
 	posicaoFinal = posicaoInicial + 100
 	

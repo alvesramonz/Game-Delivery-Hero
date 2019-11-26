@@ -25,6 +25,7 @@ radius = 12.7246
 height = 14.514
 
 [node name="Mage" type="StaticBody2D"]
+collision_layer = 16
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true

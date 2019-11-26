@@ -101,86 +101,86 @@ texture = ExtResource( 1 )
 motion_mirroring = Vector2( 124, 0 )
 
 [node name="night-town-background-forest" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 104.007, 432.535 )
+position = Vector2( 104.91, 483.977 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest9" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 2157.15, 434.122 )
+position = Vector2( 2158.05, 485.564 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest5" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 1130.04, 432.535 )
+position = Vector2( 1130.94, 483.977 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest14" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 3183.19, 434.122 )
+position = Vector2( 3184.09, 485.564 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest2" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 430.954, 432.551 )
+position = Vector2( 431.857, 483.993 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest13" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 2484.1, 434.138 )
+position = Vector2( 2485, 485.58 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest7" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 1456.99, 432.551 )
+position = Vector2( 1457.89, 483.993 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest12" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 3510.13, 434.138 )
+position = Vector2( 3511.03, 485.58 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest3" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 755.256, 432.088 )
+position = Vector2( 756.159, 483.53 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest16" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 2808.4, 433.675 )
+position = Vector2( 2809.3, 485.117 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest8" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 1781.29, 432.088 )
+position = Vector2( 1782.19, 483.53 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest15" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 3834.44, 433.675 )
+position = Vector2( 3835.34, 485.117 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest17" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 3834.44, 433.675 )
+position = Vector2( 3835.34, 485.117 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest4" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 801.585, 431.625 )
+position = Vector2( 802.488, 483.067 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest11" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 2854.73, 433.211 )
+position = Vector2( 2855.63, 484.653 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest6" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 1827.62, 431.625 )
+position = Vector2( 1828.52, 483.067 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )
 
 [node name="night-town-background-forest10" type="Sprite" parent="ParallaxBackground2/ParallaxLayer"]
-position = Vector2( 3942.76, 435.796 )
+position = Vector2( 3943.66, 487.238 )
 scale = Vector2( 3.23989, 3.20595 )
 texture = ExtResource( 2 )

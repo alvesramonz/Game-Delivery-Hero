@@ -1,18 +1,17 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Enemies/GhostFire.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-1.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-2.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-3.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-4.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-5.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-6.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-7.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-8.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-1.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-3.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-4.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-5.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-6.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-7.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Montros/Ghost 04/Run/burning-ghoul-8.png" type="Texture" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "Run",
 "speed": 7.0
@@ -21,7 +20,7 @@ animations = [ {
 [sub_resource type="CapsuleShape2D" id=2]
 
 [node name="GhostFire" type="StaticBody2D"]
-script = ExtResource( 1 )
+collision_layer = 16
 __meta__ = {
 "_edit_group_": true
 }

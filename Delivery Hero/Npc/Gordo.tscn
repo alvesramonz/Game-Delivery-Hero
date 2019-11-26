@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/bearded-idle/bearded-idle-1.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/bearded-idle/bearded-idle-2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/bearded-idle/bearded-idle-3.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/bearded-idle/bearded-idle-4.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/bearded-idle/bearded-idle-5.png" type="Texture" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 6.0
+} ]
+
+[node name="Gordo" type="Node2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 4.28202, -6.01522 )
+scale = Vector2( 1.2141, 1.25597 )
+frames = SubResource( 1 )
+animation = "Idle"
+frame = 1
+playing = true
+flip_h = true

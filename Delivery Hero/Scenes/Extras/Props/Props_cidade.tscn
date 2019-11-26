@@ -40,7 +40,8 @@ shape = SubResource( 2 )
 
 [node name="crate" type="Sprite" parent="."]
 editor/display_folded = true
-position = Vector2( 145.879, 65.4293 )
+position = Vector2( 139.339, 60.4349 )
+scale = Vector2( 0.664603, 0.714607 )
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true

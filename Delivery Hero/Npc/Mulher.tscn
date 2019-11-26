@@ -1,0 +1,28 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/woman-idle/woman-idle-1.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/woman-idle/woman-idle-2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/woman-idle/woman-idle-3.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/woman-idle/woman-idle-4.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/woman-idle/woman-idle-5.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/woman-idle/woman-idle-6.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Cidade Gothicvania/PNG/Npc/woman-idle/woman-idle-7.png" type="Texture" id=7]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 7.0
+} ]
+
+[node name="Mulher" type="Node2D"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 4.04855, -4.69264 )
+scale = Vector2( 1.21884, 1.20403 )
+frames = SubResource( 1 )
+animation = "Idle"
+frame = 2
+playing = true
+flip_h = true

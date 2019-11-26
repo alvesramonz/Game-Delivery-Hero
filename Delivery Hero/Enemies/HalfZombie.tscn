@@ -1,25 +1,18 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Enemies/HalfZombie.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Montros/Half Monster/0.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Montros/Half Monster/1.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Montros/Half Monster/3.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Montros/Half Monster/4.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Montros/Half Monster/12.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Montros/Half Monster/5.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Montros/Half Monster/6.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Montros/Half Monster/7.png" type="Texture" id=9]
-[ext_resource path="res://Assets/Montros/Half Monster/8.png" type="Texture" id=10]
-[ext_resource path="res://Assets/Montros/Half Monster/9.png" type="Texture" id=11]
-[ext_resource path="res://Assets/Montros/Half Monster/10.png" type="Texture" id=12]
-[ext_resource path="res://Assets/Montros/Half Monster/11.png" type="Texture" id=13]
-[ext_resource path="res://Assets/Montros/Half Monster/13.png" type="Texture" id=14]
-[ext_resource path="res://Assets/Montros/Half Monster/14.png" type="Texture" id=15]
-[ext_resource path="res://Assets/Montros/Half Monster/15.png" type="Texture" id=16]
+[ext_resource path="res://Assets/Montros/Half Monster/12.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Montros/Half Monster/7.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Montros/Half Monster/8.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Montros/Half Monster/9.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Montros/Half Monster/11.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Montros/Half Monster/13.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Montros/Half Monster/14.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Montros/Half Monster/15.png" type="Texture" id=9]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "Atack",
 "speed": 6.0
@@ -29,6 +22,7 @@ animations = [ {
 radius = 13.6379
 
 [node name="HalfZombie" type="StaticBody2D"]
+collision_layer = 16
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
@@ -37,7 +31,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 animation = "Atack"
-frame = 14
+frame = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( -1.05294, 1.05293 )

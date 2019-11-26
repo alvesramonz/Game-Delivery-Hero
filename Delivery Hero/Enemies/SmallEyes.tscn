@@ -22,6 +22,7 @@ animations = [ {
 radius = 3.53538
 
 [node name="SmallEyes" type="StaticBody2D"]
+collision_layer = 16
 __meta__ = {
 "_edit_group_": true
 }
@@ -31,7 +32,7 @@ position = Vector2( -4.4967, -4.73337 )
 scale = Vector2( 0.437912, 0.428051 )
 frames = SubResource( 1 )
 animation = "Idle"
-frame = 3
+frame = 4
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

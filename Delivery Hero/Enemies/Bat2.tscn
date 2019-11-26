@@ -1,14 +1,13 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Enemies/Bat2.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Montros/Bat 2/1.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Montros/Bat 2/2.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Montros/Bat 2/3.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Montros/Bat 2/4.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Montros/Bat 2/1.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Montros/Bat 2/2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Montros/Bat 2/3.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Montros/Bat 2/4.png" type="Texture" id=4]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "Fly",
 "speed": 7.0
@@ -18,7 +17,7 @@ animations = [ {
 radius = 12.9827
 
 [node name="Bat2" type="StaticBody2D"]
-script = ExtResource( 1 )
+collision_layer = 16
 __meta__ = {
 "_edit_group_": true
 }

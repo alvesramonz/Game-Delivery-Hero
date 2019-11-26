@@ -8,7 +8,7 @@ var velocidade = 0.7
 func _ready():
 	$AnimatedSprite.play("Run")
 	posicaoInicial = $".".position.x
-	posicaoFinal = posicaoInicial + 500
+	posicaoFinal = posicaoInicial + 300
 	
 	
 func _process(delta):
